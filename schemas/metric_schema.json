@@ -1,0 +1,264 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://everse.software/metric_schema.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+            "id",
+            "name",
+            "description",
+            "tags",
+            "type",
+            "subtype",
+            "release-date",
+            "version",
+            "doi",
+            "authors"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "default": "",
+                "title": "The id Schema",
+                "examples": [
+                    "metric_id"
+                ]
+            },
+            "name": {
+                "type": "string",
+                "default": "",
+                "title": "The name Schema",
+                "examples": [
+                    "metric name"
+                ]
+            },
+            "description": {
+                "type": "string",
+                "default": "",
+                "title": "The description Schema",
+                "examples": [
+                    "a short description of metric"
+                ]
+            },
+            "tags": {
+                "type": "array",
+                "default": [],
+                "title": "The tags Schema",
+                "items": {
+                    "type": "string",
+                    "title": "A Schema",
+                    "examples": [
+                        "tag_1",
+                        "tag_2"
+                    ]
+                },
+                "examples": [
+                    ["tag_1",
+                        "tag_2"
+                    ]
+                ]
+            },
+            "type": {
+                "type": "array",
+                "default": [],
+                "title": "The type Schema",
+                "items": {
+                    "type": "string",
+                    "title": "A Schema",
+                    "examples": [
+                        "fair",
+                        "quality",
+                        "other"
+                    ]
+                },
+                "examples": [
+                    ["fair",
+                        "quality",
+                        "other"
+                    ]
+                ]
+            },
+            "subtype": {
+                "type": "array",
+                "default": [],
+                "title": "The subtype Schema",
+                "items": {
+                    "type": "string",
+                    "title": "A Schema",
+                    "examples": [
+                        "fair",
+                        "accessible",
+                        "interoperable",
+                        "reusable"
+                    ]
+                },
+                "examples": [
+                    ["fair",
+                        "accessible",
+                        "interoperable",
+                        "reusable"
+                    ]
+                ]
+            },
+            "release-date": {
+                "type": "string",
+                "default": "",
+                "title": "The release-date Schema",
+                "examples": [
+                    "09-10-2024"
+                ]
+            },
+            "version": {
+                "type": "string",
+                "default": "",
+                "title": "The version Schema",
+                "examples": [
+                    "0.0.1"
+                ]
+            },
+            "doi": {
+                "type": "string",
+                "default": "",
+                "title": "The doi Schema",
+                "examples": [
+                    "10.5281/zenodo.0000000"
+                ]
+            },
+            "authors": {
+                "type": "object",
+                "default": {},
+                "title": "The authors Schema",
+                "required": [
+                    "name",
+                    "type",
+                    "orcid",
+                    "email"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The name Schema",
+                        "examples": [
+                            "maintainer name"
+                        ]
+                    },
+                    "type": {
+                        "type": "array",
+                        "default": [],
+                        "title": "The type Schema",
+                        "items": {
+                            "type": "string",
+                            "title": "A Schema",
+                            "examples": [
+                                "individual",
+                                "entity"
+                            ]
+                        },
+                        "examples": [
+                            ["individual",
+                                "entity"
+                            ]
+                        ]
+                    },
+                    "orcid": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The orcid Schema",
+                        "examples": [
+                            "https://orcid.org/0000-0000-0000-0000"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
+                        "examples": [
+                            "someone@somewhere.com"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "name": "maintainer name",
+                    "type": [
+                        "individual",
+                        "entity"
+                    ],
+                    "orcid": "https://orcid.org/0000-0000-0000-0000",
+                    "email": "someone@somewhere.com"
+                }]
+            }
+        },
+        "examples": [{
+            "id": "metric_id",
+            "name": "metric name",
+            "description": "a short description of metric",
+            "tags": [
+                "tag_1",
+                "tag_2"
+            ],
+            "type": [
+                "fair",
+                "quality",
+                "other"
+            ],
+            "subtype": [
+                "fair",
+                "accessible",
+                "interoperable",
+                "reusable"
+            ],
+            "release-date": "09-10-2024",
+            "version": "0.0.1",
+            "doi": "10.5281/zenodo.0000000",
+            "authors": {
+                "name": "maintainer name",
+                "type": [
+                    "individual",
+                    "entity"
+                ],
+                "orcid": "https://orcid.org/0000-0000-0000-0000",
+                "email": "someone@somewhere.com"
+            }
+        }]
+    },
+    "examples": [
+        [{
+            "id": "metric_id",
+            "name": "metric name",
+            "description": "a short description of metric",
+            "tags": [
+                "tag_1",
+                "tag_2"
+            ],
+            "type": [
+                "fair",
+                "quality",
+                "other"
+            ],
+            "subtype": [
+                "fair",
+                "accessible",
+                "interoperable",
+                "reusable"
+            ],
+            "release-date": "09-10-2024",
+            "version": "0.0.1",
+            "doi": "10.5281/zenodo.0000000",
+            "authors": {
+                "name": "maintainer name",
+                "type": [
+                    "individual",
+                    "entity"
+                ],
+                "orcid": "https://orcid.org/0000-0000-0000-0000",
+                "email": "someone@somewhere.com"
+            }
+        }]
+    ]
+}
