@@ -31,4 +31,4 @@ jobs:
         pipenv install --system --deploy --dev
     - name: Test with pytest
       run: |
-        pytest
+        python -m pytest
