@@ -31,9 +31,8 @@ jobs:
         pipenv install --system --deploy --dev
     - name: List files for debugging
       run: |
-          echo ${GITHUB_WORKSPACE}
-          echo ${{ github.workspace }}
-          pwd
+          echo "GITHUB_WORKSPACE:" ${GITHUB_WORKSPACE}
+          echo "PWD:" ${PWD}
           ls -al
           tree .
     - name: Test with pytest
