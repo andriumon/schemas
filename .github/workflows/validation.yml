@@ -29,6 +29,13 @@ jobs:
     - name: Install Dependencies
       run: |
         pipenv install --system --deploy --dev
+    - name: List files for debugging
+      run: |
+          echo ${GITHUB_WORKSPACE}
+          echo ${{ github.workspace }}
+          pwd
+          ls -al
+          tree .
     - name: Test with pytest
       run: |
         python -m pytest
