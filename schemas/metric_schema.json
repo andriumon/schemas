@@ -3,11 +3,10 @@
     "$id": "https://everse.software/metric_schema.json",
     "type": "array",
     "default": [],
-    "title": "EVERSE metric schema",
     "items": {
         "type": "object",
         "default": {},
-        "title": "A Schema",
+        "title": "EVERSE metric schema",
         "required": [
             "id",
             "name",
