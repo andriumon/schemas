@@ -24,13 +24,11 @@ jobs:
         python-version: '3.13'
         cache: 'pipenv'
     - name: Install pipenv
-      run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
-    - name: Activate a virtualenv
       run: |
-        pipenv shell
-    - name: Install dependencies
+        python -m pip install --upgrade pipenv wheel
+    - name: Install Dependencies
       run: |
-        pipenv install --deploy --dev
+        pipenv install --system --deploy --dev
     - name: Test with pytest
       run: |
         pytest
