@@ -3,7 +3,7 @@
     "$id": "https://everse.software/metric_schema.json",
     "type": "array",
     "default": [],
-    "title": "Root Schema",
+    "title": "EVERSE metric schema",
     "items": {
         "type": "object",
         "default": {},
@@ -24,15 +24,15 @@
             "id": {
                 "type": "string",
                 "default": "",
-                "title": "The id Schema",
+                "title": "The id of the metric",
                 "examples": [
-                    "metric_id"
+                    "linter-checks"
                 ]
             },
             "name": {
                 "type": "string",
                 "default": "",
-                "title": "The name Schema",
+                "title": "The name of the metric",
                 "examples": [
                     "metric name"
                 ]
@@ -40,25 +40,26 @@
             "description": {
                 "type": "string",
                 "default": "",
-                "title": "The description Schema",
+                "title": "The description of the metric",
                 "examples": [
-                    "a short description of metric"
+                    "a short description of the metric"
                 ]
             },
             "tags": {
                 "type": "array",
                 "default": [],
-                "title": "The tags Schema",
+                "title": "The tags of the metric",
                 "items": {
                     "type": "string",
-                    "title": "A Schema",
+                    "title": "A tag for the metric",
                     "examples": [
-                        "tag_1",
-                        "tag_2"
+                        "tag-1",
+                        "tag-2"
                     ]
                 },
                 "examples": [
-                    ["tag_1",
+                    [
+                        "tag_1",
                         "tag_2"
                     ]
                 ]
@@ -66,10 +67,10 @@
             "type": {
                 "type": "array",
                 "default": [],
-                "title": "The type Schema",
+                "title": "The type of the metric",
                 "items": {
                     "type": "string",
-                    "title": "A Schema",
+                    "title": "The type of the metric",
                     "examples": [
                         "fair",
                         "quality",
@@ -86,7 +87,7 @@
             "subtype": {
                 "type": "array",
                 "default": [],
-                "title": "The subtype Schema",
+                "title": "The subtype of the metric",
                 "items": {
                     "type": "string",
                     "title": "A Schema",
@@ -108,7 +109,7 @@
             "release-date": {
                 "type": "string",
                 "default": "",
-                "title": "The release-date Schema",
+                "title": "The release-date of the metric",
                 "examples": [
                     "09-10-2024"
                 ]
@@ -116,15 +117,16 @@
             "version": {
                 "type": "string",
                 "default": "",
-                "title": "The version Schema",
+                "title": "The version of the metric",
                 "examples": [
-                    "0.0.1"
+                    "0.0.1",
+                    "v0.0.1"
                 ]
             },
             "doi": {
                 "type": "string",
                 "default": "",
-                "title": "The doi Schema",
+                "title": "The doi of the metric",
                 "examples": [
                     "10.5281/zenodo.0000000"
                 ]
@@ -132,7 +134,7 @@
             "authors": {
                 "type": "object",
                 "default": {},
-                "title": "The authors Schema",
+                "title": "The authors of the metric",
                 "required": [
                     "name",
                     "type",
