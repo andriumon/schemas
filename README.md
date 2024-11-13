@@ -19,5 +19,5 @@ pipenv install --system --deploy --dev
 Install `pre-commit`:
 
 ```
-    pre-commit install
+pre-commit install
 ```
