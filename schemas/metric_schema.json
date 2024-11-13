@@ -66,13 +66,7 @@
                     "quality",
                     "other"
                 ]
-            },
-            "examples": [
-                ["fair",
-                    "quality",
-                    "other"
-                ]
-            ]
+            }
         },
         "subtype": {
             "type": "array",
@@ -87,14 +81,7 @@
                     "interoperable",
                     "reusable"
                 ]
-            },
-            "examples": [
-                ["fair",
-                    "accessible",
-                    "interoperable",
-                    "reusable"
-                ]
-            ]
+            }
         },
         "release-date": {
             "type": "string",
@@ -155,12 +142,7 @@
                             "individual",
                             "entity"
                         ]
-                    },
-                    "examples": [
-                        ["individual",
-                            "entity"
-                        ]
-                    ]
+                    }
                 },
                 "orcid": {
                     "type": "string",
