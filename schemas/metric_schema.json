@@ -52,13 +52,7 @@
                     "tag-1",
                     "tag-2"
                 ]
-            },
-            "examples": [
-                [
-                    "tag_1",
-                    "tag_2"
-                ]
-            ]
+            }
         },
         "type": {
             "type": "array",
