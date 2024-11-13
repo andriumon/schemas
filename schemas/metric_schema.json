@@ -1,228 +1,191 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://everse.software/metric_schema.json",
-    "type": "array",
-    "default": [],
-    "title": "",
-    "items": {
-        "type": "object",
-        "default": {},
-        "title": "EVERSE metric schema",
-        "required": [
-            "id",
-            "name",
-            "description",
-            "tags",
-            "type",
-            "subtype",
-            "release-date",
-            "version",
-            "doi",
-            "authors"
-        ],
-        "properties": {
-            "id": {
-                "type": "string",
-                "default": "",
-                "title": "The id of the metric",
-                "examples": [
-                    "linter-checks"
-                ]
-            },
-            "name": {
-                "type": "string",
-                "default": "",
-                "title": "The name of the metric",
-                "examples": [
-                    "metric name"
-                ]
-            },
-            "description": {
-                "type": "string",
-                "default": "",
-                "title": "The description of the metric",
-                "examples": [
-                    "a short description of the metric"
-                ]
-            },
-            "tags": {
-                "type": "array",
-                "default": [],
-                "title": "The tags of the metric",
-                "items": {
-                    "type": "string",
-                    "title": "A tag for the metric",
-                    "examples": [
-                        "tag-1",
-                        "tag-2"
-                    ]
-                },
-                "examples": [
-                    [
-                        "tag_1",
-                        "tag_2"
-                    ]
-                ]
-            },
-            "type": {
-                "type": "array",
-                "default": [],
-                "title": "The type of the metric",
-                "items": {
-                    "type": "string",
-                    "title": "The type of the metric",
-                    "examples": [
-                        "fair",
-                        "quality",
-                        "other"
-                    ]
-                },
-                "examples": [
-                    ["fair",
-                        "quality",
-                        "other"
-                    ]
-                ]
-            },
-            "subtype": {
-                "type": "array",
-                "default": [],
-                "title": "The subtype of the metric",
-                "items": {
-                    "type": "string",
-                    "title": "A Schema",
-                    "examples": [
-                        "fair",
-                        "accessible",
-                        "interoperable",
-                        "reusable"
-                    ]
-                },
-                "examples": [
-                    ["fair",
-                        "accessible",
-                        "interoperable",
-                        "reusable"
-                    ]
-                ]
-            },
-            "release-date": {
-                "type": "string",
-                "default": "",
-                "title": "The release-date of the metric",
-                "examples": [
-                    "01-01-1900",
-                    "31-12-2024"
-                ],
-                "format": "date",
-                "pattern": "^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}$"
-
-            },
-            "version": {
-                "type": "string",
-                "default": "",
-                "title": "The version of the metric",
-                "examples": [
-                    "0.0.1",
-                    "v0.0.1"
-                ]
-            },
-            "doi": {
-                "type": "string",
-                "default": "",
-                "title": "The doi of the metric",
-                "examples": [
-                    "10.5281/zenodo.0000000"
-                ]
-            },
-            "authors": {
-                "type": "object",
-                "default": {},
-                "title": "The authors of the metric",
-                "required": [
-                    "name",
-                    "type",
-                    "orcid",
-                    "email"
-                ],
-                "properties": {
-                    "name": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The name Schema",
-                        "examples": [
-                            "maintainer name"
-                        ]
-                    },
-                    "type": {
-                        "type": "array",
-                        "default": [],
-                        "title": "The type Schema",
-                        "items": {
-                            "type": "string",
-                            "title": "A Schema",
-                            "examples": [
-                                "individual",
-                                "entity"
-                            ]
-                        },
-                        "examples": [
-                            ["individual",
-                                "entity"
-                            ]
-                        ]
-                    },
-                    "orcid": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The orcid Schema",
-                        "examples": [
-                            "https://orcid.org/0000-0000-0000-0000"
-                        ]
-                    },
-                    "email": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The email Schema",
-                        "examples": [
-                            "someone@somewhere.com"
-                        ]
-                    }
-                },
-                "examples": [{
-                    "name": "maintainer name",
-                    "type": [
-                        "individual",
-                        "entity"
-                    ],
-                    "orcid": "https://orcid.org/0000-0000-0000-0000",
-                    "email": "someone@somewhere.com"
-                }]
-            }
+    "type": "object",
+    "default": {},
+    "title": "EVERSE metric schema",
+    "required": [
+        "id",
+        "name",
+        "description",
+        "tags",
+        "type",
+        "subtype",
+        "release-date",
+        "version",
+        "doi",
+        "authors"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "default": "",
+            "title": "The id of the metric",
+            "examples": [
+                "linter-checks"
+            ]
         },
-        "examples": [{
-            "id": "metric_id",
-            "name": "metric name",
-            "description": "a short description of metric",
-            "tags": [
-                "tag_1",
-                "tag_2"
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name of the metric",
+            "examples": [
+                "metric name"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description of the metric",
+            "examples": [
+                "a short description of the metric"
+            ]
+        },
+        "tags": {
+            "type": "array",
+            "default": [],
+            "title": "The tags of the metric",
+            "items": {
+                "type": "string",
+                "title": "A tag for the metric",
+                "examples": [
+                    "tag-1",
+                    "tag-2"
+                ]
+            },
+            "examples": [
+                [
+                    "tag_1",
+                    "tag_2"
+                ]
+            ]
+        },
+        "type": {
+            "type": "array",
+            "default": [],
+            "title": "The type of the metric",
+            "items": {
+                "type": "string",
+                "title": "The type of the metric",
+                "examples": [
+                    "fair",
+                    "quality",
+                    "other"
+                ]
+            },
+            "examples": [
+                ["fair",
+                    "quality",
+                    "other"
+                ]
+            ]
+        },
+        "subtype": {
+            "type": "array",
+            "default": [],
+            "title": "The subtype of the metric",
+            "items": {
+                "type": "string",
+                "title": "A Schema",
+                "examples": [
+                    "fair",
+                    "accessible",
+                    "interoperable",
+                    "reusable"
+                ]
+            },
+            "examples": [
+                ["fair",
+                    "accessible",
+                    "interoperable",
+                    "reusable"
+                ]
+            ]
+        },
+        "release-date": {
+            "type": "string",
+            "default": "",
+            "title": "The release-date of the metric",
+            "examples": [
+                "01-01-1900",
+                "31-12-2024"
             ],
-            "type": [
-                "fair",
-                "quality",
-                "other"
+            "format": "date",
+            "pattern": "^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}$"
+
+        },
+        "version": {
+            "type": "string",
+            "default": "",
+            "title": "The version of the metric",
+            "examples": [
+                "0.0.1",
+                "v0.0.1"
+            ]
+        },
+        "doi": {
+            "type": "string",
+            "default": "",
+            "title": "The doi of the metric",
+            "examples": [
+                "10.5281/zenodo.0000000"
+            ]
+        },
+        "authors": {
+            "type": "object",
+            "default": {},
+            "title": "The authors of the metric",
+            "required": [
+                "name",
+                "type",
+                "orcid",
+                "email"
             ],
-            "subtype": [
-                "fair",
-                "accessible",
-                "interoperable",
-                "reusable"
-            ],
-            "release-date": "09-10-2024",
-            "version": "0.0.1",
-            "doi": "10.5281/zenodo.0000000",
-            "authors": {
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "maintainer name"
+                    ]
+                },
+                "type": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The type Schema",
+                    "items": {
+                        "type": "string",
+                        "title": "A Schema",
+                        "examples": [
+                            "individual",
+                            "entity"
+                        ]
+                    },
+                    "examples": [
+                        ["individual",
+                            "entity"
+                        ]
+                    ]
+                },
+                "orcid": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The orcid Schema",
+                    "examples": [
+                        "https://orcid.org/0000-0000-0000-0000"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email Schema",
+                    "examples": [
+                        "someone@somewhere.com"
+                    ]
+                }
+            },
+            "examples": [{
                 "name": "maintainer name",
                 "type": [
                     "individual",
@@ -230,7 +193,39 @@
                 ],
                 "orcid": "https://orcid.org/0000-0000-0000-0000",
                 "email": "someone@somewhere.com"
-            }
-        }]
-    }
+            }]
+        }
+    },
+    "examples": [{
+        "id": "metric_id",
+        "name": "metric name",
+        "description": "a short description of metric",
+        "tags": [
+            "tag_1",
+            "tag_2"
+        ],
+        "type": [
+            "fair",
+            "quality",
+            "other"
+        ],
+        "subtype": [
+            "fair",
+            "accessible",
+            "interoperable",
+            "reusable"
+        ],
+        "release-date": "09-10-2024",
+        "version": "0.0.1",
+        "doi": "10.5281/zenodo.0000000",
+        "authors": {
+            "name": "maintainer name",
+            "type": [
+                "individual",
+                "entity"
+            ],
+            "orcid": "https://orcid.org/0000-0000-0000-0000",
+            "email": "someone@somewhere.com"
+        }
+    }]
 }
