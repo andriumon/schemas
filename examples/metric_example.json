@@ -23,8 +23,7 @@
   "authors": {
     "name": "maintainer name",
     "type": [
-      "individual",
-      "entity"
+      "individual"
     ],
     "orcid": "https://orcid.org/0000-0000-0000-0000",
     "email": "someone@somewhere.com"
