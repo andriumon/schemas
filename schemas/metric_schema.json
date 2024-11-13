@@ -171,37 +171,5 @@
                 "email": "someone@somewhere.com"
             }]
         }
-    },
-    "examples": [{
-        "id": "metric_id",
-        "name": "metric name",
-        "description": "a short description of metric",
-        "tags": [
-            "tag_1",
-            "tag_2"
-        ],
-        "type": [
-            "fair",
-            "quality",
-            "other"
-        ],
-        "subtype": [
-            "fair",
-            "accessible",
-            "interoperable",
-            "reusable"
-        ],
-        "release-date": "09-10-2024",
-        "version": "0.0.1",
-        "doi": "10.5281/zenodo.0000000",
-        "authors": {
-            "name": "maintainer name",
-            "type": [
-                "individual",
-                "entity"
-            ],
-            "orcid": "https://orcid.org/0000-0000-0000-0000",
-            "email": "someone@somewhere.com"
-        }
-    }]
+    }
 }
