@@ -48,6 +48,7 @@
             "items": {
                 "type": "string",
                 "title": "A tag for the metric",
+                "enum": ["tag-1", "tag-2", "tag-3"],
                 "examples": [
                     "tag-1",
                     "tag-2"
