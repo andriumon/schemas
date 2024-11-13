@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://everse.software/metric_schema.json",
+    "$id": "https://everse.software/identifier_schema.json",
     "type": "object",
     "default": {},
-    "title": "EVERSE metric schema",
+    "title": "EVERSE identifier schema",
     "required": [
         "id",
         "name",
@@ -20,7 +20,7 @@
         "id": {
             "type": "string",
             "default": "",
-            "title": "The id of the metric",
+            "title": "The id of the identifier",
             "examples": [
                 "linter-checks"
             ]
@@ -28,26 +28,26 @@
         "name": {
             "type": "string",
             "default": "",
-            "title": "The name of the metric",
+            "title": "The name of the identifier",
             "examples": [
-                "metric name"
+                "identifier name"
             ]
         },
         "description": {
             "type": "string",
             "default": "",
-            "title": "The description of the metric",
+            "title": "The description of the identifier",
             "examples": [
-                "a short description of the metric"
+                "a short description of the identifier"
             ]
         },
         "tags": {
             "type": "array",
             "default": [],
-            "title": "The tags of the metric",
+            "title": "The tags of the identifier",
             "items": {
                 "type": "string",
-                "title": "A tag for the metric",
+                "title": "A tag for the identifier",
                 "enum": ["tag-1", "tag-2", "tag-3"],
                 "examples": [
                     "tag-1",
@@ -58,10 +58,10 @@
         "type": {
             "type": "array",
             "default": [],
-            "title": "The type of the metric",
+            "title": "The type of the identifier",
             "items": {
                 "type": "string",
-                "title": "The type of the metric",
+                "title": "The type of the identifier",
                 "examples": [
                     "fair",
                     "quality",
@@ -72,7 +72,7 @@
         "subtype": {
             "type": "array",
             "default": [],
-            "title": "The subtype of the metric",
+            "title": "The subtype of the identifier",
             "items": {
                 "type": "string",
                 "title": "A Schema",
@@ -87,7 +87,7 @@
         "release-date": {
             "type": "string",
             "default": "",
-            "title": "The release-date of the metric",
+            "title": "The release-date of the identifier",
             "examples": [
                 "01-01-1900",
                 "31-12-2024"
@@ -99,7 +99,7 @@
         "version": {
             "type": "string",
             "default": "",
-            "title": "The version of the metric",
+            "title": "The version of the identifier",
             "examples": [
                 "0.0.1",
                 "v0.0.1"
@@ -108,7 +108,7 @@
         "doi": {
             "type": "string",
             "default": "",
-            "title": "The doi of the metric",
+            "title": "The doi of the identifier",
             "examples": [
                 "10.5281/zenodo.0000000"
             ]
@@ -116,7 +116,7 @@
         "authors": {
             "type": "object",
             "default": {},
-            "title": "The authors of the metric",
+            "title": "The authors of the identifier",
             "required": [
                 "name",
                 "type",

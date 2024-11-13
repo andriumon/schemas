@@ -1,7 +1,7 @@
 {
-  "id": "metric_id",
-  "name": "metric name",
-  "description": "a short description of metric",
+  "id": "identifier_id",
+  "name": "identifier name",
+  "description": "a short description of identifier",
   "tags": [
     "tag-1",
     "tag-2"
