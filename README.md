@@ -21,3 +21,9 @@ Install `pre-commit`:
 ```
 pre-commit install
 ```
+
+To test the schemas run:
+
+```
+pytest
+```
