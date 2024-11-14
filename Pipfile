@@ -5,12 +5,14 @@ name = "pypi"
 
 [packages]
 jsonschema = {extras = ["format"], version = "*"}
-
-[dev-packages]
 pytest = "*"
 pytest-cov = "*"
 pre-commit = "*"
+json-schema-for-humans = "*"
+
+
+[dev-packages]
 
 [requires]
-python_version = "3.13"
-python_full_version = "3.13.0"
+python_version = "3.12"
+python_full_version = "3.12.7"
