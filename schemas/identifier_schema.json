@@ -161,16 +161,7 @@
                         "someone@somewhere.com"
                     ]
                 }
-            },
-            "examples": [{
-                "name": "maintainer name",
-                "type": [
-                    "individual",
-                    "entity"
-                ],
-                "orcid": "https://orcid.org/0000-0000-0000-0000",
-                "email": "someone@somewhere.com"
-            }]
+            }
         }
     }
 }
