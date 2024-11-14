@@ -5,6 +5,7 @@ This repository contains JSON schemas for the EVERSE project
 > [!NOTE]
 > This is a work in progress. The schemas of this repository will eventually be merged with <https://github.com/EVERSE-ResearchSoftware/RSQuality_indicators>.
 
+
 ## Setup
 
 Install `pipenv`:
@@ -25,7 +26,7 @@ Install `pre-commit`:
 pre-commit install
 ```
 
-To test the schemas run:
+To test the schemas after changes:
 
 ```
 pytest
@@ -38,3 +39,8 @@ pytest
 pipenv --rm
 pipenv --clear
 ```
+
+
+## Useful links
+
+- https://json-schema.org
