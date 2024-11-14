@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schame pages</title>
+  <title>Schema page</title>
 </head>
 <body>
   <h1>Available Schemas</h1>
-  <ul id="file-list"></ul>
+  <ul id="link-list"></ul>
 
   <script>
     // Embed the JSON data directly
@@ -16,12 +16,12 @@
       {"name": "data generator", "url": "data_generator.html"},
     ];
 
-    const fileList = document.getElementById('file-list');
+    const fileList = document.getElementById('link-list');
     links.forEach(file => {
       const listItem = document.createElement('li');
       const link = document.createElement('a');
       link.href = file.url;
-      link.textContent = file.name; // Set the link text to the parent folder name
+      link.textContent = file.name;
       listItem.appendChild(link);
       fileList.appendChild(listItem);
     });
