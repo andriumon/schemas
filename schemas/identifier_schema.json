@@ -127,7 +127,7 @@
                 "name": {
                     "type": "string",
                     "default": "",
-                    "title": "The name Schema",
+                    "title": "The name of the authors",
                     "examples": [
                         "maintainer name"
                     ]
@@ -135,10 +135,10 @@
                 "type": {
                     "type": "array",
                     "default": [],
-                    "title": "The type Schema",
+                    "title": "The type of the authors",
                     "items": {
                         "type": "string",
-                        "title": "A Schema",
+                        "title": "A of the authors",
                         "examples": [
                             "individual",
                             "entity"
@@ -148,7 +148,7 @@
                 "orcid": {
                     "type": "string",
                     "default": "",
-                    "title": "The orcid Schema",
+                    "title": "The orcid of the authors",
                     "examples": [
                         "https://orcid.org/0000-0000-0000-0000"
                     ]
@@ -156,7 +156,7 @@
                 "email": {
                     "type": "string",
                     "default": "",
-                    "title": "The email Schema",
+                    "title": "The email of the authors",
                     "examples": [
                         "someone@somewhere.com"
                     ]
