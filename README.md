@@ -27,3 +27,11 @@ To test the schemas run:
 ```
 pytest
 ```
+
+
+## Remove the virtualenv and clear the cache
+
+```
+pipenv --rm
+pipenv --clear
+```
