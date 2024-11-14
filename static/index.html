@@ -11,17 +11,17 @@
 
   <script>
     // Embed the JSON data directly
-    const files = [
-      "identifier/identifier_schema.html",
+    const links = [
+      {"name": "identifier schema", "url": "identifier/identifier_schema.html"},
+      {"name": "data generator", "url": "data_generator.html"},
     ];
 
     const fileList = document.getElementById('file-list');
-    files.forEach(file => {
-      const parentFolder = file.split('/')[0]; // Extract the parent folder
+    links.forEach(file => {
       const listItem = document.createElement('li');
       const link = document.createElement('a');
-      link.href = file;
-      link.textContent = parentFolder; // Set the link text to the parent folder name
+      link.href = file.url;
+      link.textContent = file.name; // Set the link text to the parent folder name
       listItem.appendChild(link);
       fileList.appendChild(listItem);
     });
