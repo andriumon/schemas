@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 jsonschema = {extras = ["format"], version = "*"}
 pytest = "*"
-pytest-cov = "*"
 pre-commit = "*"
 json-schema-for-humans = "*"
 
