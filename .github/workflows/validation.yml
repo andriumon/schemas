@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pipenv wheel
     - name: Install Dependencies
       run: |
-        pipenv install --system --deploy --dev
+        pipenv install
     - name: List files for debugging
       run: |
           echo "GITHUB_WORKSPACE:" ${GITHUB_WORKSPACE}
@@ -53,7 +53,7 @@ jobs:
         python -m pip install --upgrade pipenv wheel
     - name: Install Dependencies
       run: |
-        pipenv install --system --deploy --dev
+        pipenv install
     - name: Generate the static pages
       run: |
         generate-schema-doc schemas/identifier_schema.json ./static/identifier
