@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schame pages</title>
+</head>
+<body>
+  <h1>Available Schemas</h1>
+  <ul id="file-list"></ul>
+
+  <script>
+    // Embed the JSON data directly
+    const files = [
+      "identifier/identifier_schema.html",
+    ];
+
+    const fileList = document.getElementById('file-list');
+    files.forEach(file => {
+      const parentFolder = file.split('/')[0]; // Extract the parent folder
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = file;
+      link.textContent = parentFolder; // Set the link text to the parent folder name
+      listItem.appendChild(link);
+      fileList.appendChild(listItem);
+    });
+  </script>
+</body>
+</html>
