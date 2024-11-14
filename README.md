@@ -19,11 +19,6 @@ This repository contains JSON schemas for the EVERSE project
 | &check; | Version | version | dcat:version | String |
 | &cross; | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
 
-<!--
-&cross;
-&check;
--->
-
 
 ## Setup
 
