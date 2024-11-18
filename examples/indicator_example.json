@@ -1,7 +1,7 @@
 {
-  "id": "identifier_id",
-  "name": "identifier name",
-  "description": "a short description of identifier",
+  "id": "indicator_id",
+  "name": "indicator name",
+  "description": "a short description of indicator",
   "keywords": [
     "keyword-1",
     "keyword-2"

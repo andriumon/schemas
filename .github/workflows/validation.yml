@@ -56,4 +56,4 @@ jobs:
         pipenv install
     - name: Generate the static pages
       run: |
-        pipenv run generate-schema-doc schemas/identifier_schema.json ./static/identifier
+        pipenv run generate-schema-doc schemas/indicator_schema.json ./static/indicator

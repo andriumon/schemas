@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://everse.software/identifier_schema.json",
+    "$id": "https://everse.software/indicator_schema.json",
     "type": "object",
     "default": {},
-    "title": "EVERSE identifier schema",
+    "title": "EVERSE indicator schema",
     "required": [
         "id",
         "name",
@@ -20,7 +20,7 @@
         "id": {
             "type": "string",
             "default": "",
-            "title": "The id of the identifier",
+            "title": "The id of the indicator",
             "examples": [
                 "linter-checks"
             ]
@@ -28,26 +28,26 @@
         "name": {
             "type": "string",
             "default": "",
-            "title": "The name of the identifier",
+            "title": "The name of the indicator",
             "examples": [
-                "identifier name"
+                "indicator name"
             ]
         },
         "description": {
             "type": "string",
             "default": "",
-            "title": "The description of the identifier",
+            "title": "The description of the indicator",
             "examples": [
-                "a short description of the identifier"
+                "a short description of the indicator"
             ]
         },
         "keyword": {
             "type": "array",
             "default": [],
-            "title": "The keywords of the identifier",
+            "title": "The keywords of the indicator",
             "items": {
                 "type": "string",
-                "title": "A keyword for the identifier",
+                "title": "A keyword for the indicator",
                 "enum": ["keyword-1", "keyword-2", "keyword-3"],
                 "examples": [
                     "keyword-1",
@@ -58,10 +58,10 @@
         "type": {
             "type": "array",
             "default": [],
-            "title": "The type of the identifier",
+            "title": "The type of the indicator",
             "items": {
                 "type": "string",
-                "title": "The type of the identifier",
+                "title": "The type of the indicator",
                 "examples": [
                     "fair",
                     "quality",
@@ -72,7 +72,7 @@
         "subtype": {
             "type": "array",
             "default": [],
-            "title": "The subtype of the identifier",
+            "title": "The subtype of the indicator",
             "items": {
                 "type": "string",
                 "title": "A Schema",
@@ -87,7 +87,7 @@
         "release-date": {
             "type": "string",
             "default": "",
-            "title": "The release-date of the identifier",
+            "title": "The release-date of the indicator",
             "examples": [
                 "01-01-1900",
                 "31-12-2024"
@@ -98,7 +98,7 @@
         "version": {
             "type": "string",
             "default": "",
-            "title": "The version of the identifier",
+            "title": "The version of the indicator",
             "examples": [
                 "0.0.1",
                 "v0.0.1"
@@ -107,7 +107,7 @@
         "doi": {
             "type": "string",
             "default": "",
-            "title": "The doi of the identifier",
+            "title": "The doi of the indicator",
             "examples": [
                 "10.5281/zenodo.0000000"
             ]
@@ -115,7 +115,7 @@
         "authors": {
             "type": "object",
             "default": {},
-            "title": "The authors of the identifier",
+            "title": "The authors of the indicator",
             "required": [
                 "name",
                 "type",
