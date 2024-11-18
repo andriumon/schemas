@@ -1,4 +1,4 @@
-
+# EVERSE schemas
 <!-- Styling related -->
 <style>
     r { color: Red }
@@ -6,8 +6,6 @@
     g { color: Green }
 </style>
 <!-- -->
-
-# EVERSE schemas
 
 This repository contains JSON schemas for the EVERSE project
 
