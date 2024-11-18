@@ -157,6 +157,7 @@
                     "type": "string",
                     "default": "",
                     "title": "The email of the authors",
+                    "format": "email",
                     "examples": [
                         "someone@somewhere.com"
                     ]
