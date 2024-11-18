@@ -8,14 +8,14 @@
 </head>
 <body>
   <h1>Generate EVERSE example data</h1>
-  <button type="button" onclick="fetchAndGenerateFakeData()">Generate identifier data</button>
+  <button type="button" onclick="fetchAndGenerateFakeData()">Generate indicator data</button>
 
   <h2>Generated Data</h2>
   <pre id="output"></pre>
 
   <script>
     // URL of the JSON schema
-    const schemaUrl = 'https://raw.githubusercontent.com/fdiblen/everse-schema/refs/heads/main/schemas/identifier_schema.json';
+    const schemaUrl = 'https://raw.githubusercontent.com/fdiblen/everse-schema/refs/heads/main/schemas/indicator_schema.json';
 
     async function fetchAndGenerateFakeData() {
       const output = document.getElementById("output");
