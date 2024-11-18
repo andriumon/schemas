@@ -62,6 +62,9 @@
             "items": {
                 "type": "string",
                 "title": "The type of the indicator",
+                "enum": ["fair",
+                    "quality",
+                    "other"],
                 "examples": [
                     "fair",
                     "quality",
