@@ -111,6 +111,7 @@
             "type": "string",
             "default": "",
             "title": "The doi of the indicator",
+            "pattern": "^10\\.\\d{4,9}(\\.\\d+)?/[-._;()/:a-zA-Z0-9]+$",
             "examples": [
                 "10.5281/zenodo.0000000"
             ]
