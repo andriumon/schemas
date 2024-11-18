@@ -138,6 +138,7 @@
                     "items": {
                         "type": "string",
                         "title": "A of the authors",
+                        "enum": ["individual", "entity"],
                         "examples": [
                             "individual",
                             "entity"

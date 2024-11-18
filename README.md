@@ -11,7 +11,7 @@ This repository contains JSON schemas for the EVERSE project
 |Status| RS Quality attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|---|
 | ✅ | RS Quality Indicator Identifier | identifier | dcterms:identifier | String |
-| ❌ | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
+| ✅ | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
 | ✅ | Name of the indicator | title | dcterms:title | String |
 | ✅ | Description | description | dcterms:description | String |
 | ✅ | Keywords | keyword | dcat:keyword | String |
