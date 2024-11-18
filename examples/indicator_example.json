@@ -1,5 +1,5 @@
 {
-  "id": "indicator_id",
+  "identifier": "indicator_id",
   "name": "indicator name",
   "description": "a short description of indicator",
   "keywords": [

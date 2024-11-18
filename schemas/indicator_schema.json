@@ -5,7 +5,7 @@
     "default": {},
     "title": "EVERSE indicator schema",
     "required": [
-        "id",
+        "identifier",
         "name",
         "description",
         "keywords",
@@ -17,12 +17,12 @@
         "authors"
     ],
     "properties": {
-        "id": {
+        "identifier": {
             "type": "string",
             "default": "",
-            "title": "The id of the indicator",
+            "title": "The identifier of the indicator",
             "examples": [
-                "linter-checks"
+                "Some-Identifier"
             ]
         },
         "name": {
