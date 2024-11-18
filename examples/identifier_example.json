@@ -2,9 +2,9 @@
   "id": "identifier_id",
   "name": "identifier name",
   "description": "a short description of identifier",
-  "tags": [
-    "tag-1",
-    "tag-2"
+  "keywords": [
+    "keyword-1",
+    "keyword-2"
   ],
   "type": [
     "fair",

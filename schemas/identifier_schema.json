@@ -8,7 +8,7 @@
         "id",
         "name",
         "description",
-        "tags",
+        "keywords",
         "type",
         "subtype",
         "release-date",
@@ -41,17 +41,17 @@
                 "a short description of the identifier"
             ]
         },
-        "tags": {
+        "keyword": {
             "type": "array",
             "default": [],
-            "title": "The tags of the identifier",
+            "title": "The keywords of the identifier",
             "items": {
                 "type": "string",
-                "title": "A tag for the identifier",
-                "enum": ["tag-1", "tag-2", "tag-3"],
+                "title": "A keyword for the identifier",
+                "enum": ["keyword-1", "keyword-2", "keyword-3"],
                 "examples": [
-                    "tag-1",
-                    "tag-2"
+                    "keyword-1",
+                    "keyword-2"
                 ]
             }
         },

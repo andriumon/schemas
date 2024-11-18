@@ -14,7 +14,7 @@ This repository contains JSON schemas for the EVERSE project
 | ❌ | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
 | ✅ | Name of the indicator | title | dcterms:title | String |
 | ✅ | Description | description | dcterms:description | String |
-| ❌ | Keywords | keyword | dcat:keyword | String |
+| ✅ | Keywords | keyword | dcat:keyword | String |
 | ❌ | RS Quality Dimension  | inDimension | dqv:inDimension | URL (category) |
 | ✅ | Version | version | dcat:version | String |
 | ❌ | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
