@@ -9,8 +9,8 @@
         "name",
         "description",
         "keywords",
-        "type",
-        "subtype",
+        "category",
+        "sub-category",
         "release-date",
         "version",
         "doi",
@@ -55,7 +55,7 @@
                 ]
             }
         },
-        "type": {
+        "category": {
             "type": "array",
             "default": [],
             "title": "The type of the indicator",
@@ -72,7 +72,7 @@
                 ]
             }
         },
-        "subtype": {
+        "sub-category": {
             "type": "array",
             "default": [],
             "title": "The subtype of the indicator",

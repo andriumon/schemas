@@ -6,10 +6,10 @@
     "keyword-1",
     "keyword-2"
   ],
-  "type": [
+  "category": [
     "fair"
   ],
-  "subtype": [
+  "sub-category": [
     "fair",
     "accessible",
     "interoperable",
