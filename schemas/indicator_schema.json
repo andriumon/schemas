@@ -41,7 +41,7 @@
                 "a short description of the indicator"
             ]
         },
-        "keyword": {
+        "keywords": {
             "type": "array",
             "default": [],
             "title": "The keywords of the indicator",
