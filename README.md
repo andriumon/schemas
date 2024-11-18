@@ -1,3 +1,12 @@
+
+<!-- Styling related -->
+<style>
+    r { color: Red }
+    o { color: Orange }
+    g { color: Green }
+</style>
+<!-- -->
+
 # EVERSE schemas
 
 This repository contains JSON schemas for the EVERSE project
@@ -10,17 +19,46 @@ This repository contains JSON schemas for the EVERSE project
 
 |Status| RS Quality attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|---|
-| &check; | RS Quality Indicator Identifier | identifier | dcterms:identifier | String |
-| &cross; | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
-| &check; | Name of the indicator | title | dcterms:title | String |
-| &check; | Description | description | dcterms:description | String |
-| &cross; | Keywords | keyword | dcat:keyword | String |
-| &cross; | RS Quality Dimension  | inDimension | dqv:inDimension | URL (category) |
-| &check; | Version | version | dcat:version | String |
-| &cross; | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
+| <g>&check;</g> | RS Quality Indicator Identifier | identifier | dcterms:identifier | String |
+| <r>&cross;</r> | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
+| <g>&check;</g> | Name of the indicator | title | dcterms:title | String |
+| <g>&check;</g> | Description | description | dcterms:description | String |
+| <r>&cross;</r> | Keywords | keyword | dcat:keyword | String |
+| <r>&cross;</r> | RS Quality Dimension  | inDimension | dqv:inDimension | URL (category) |
+| <g>&check;</g> | Version | version | dcat:version | String |
+| <r>&cross;</r> | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
 
 
-## Setup
+## Project setup
+
+Below is the list of the files and the top-level folders.
+
+```
+|-- .github
+|-- .gitignore
+|-- .pre-commit-config.yaml
+|-- Pipfile
+|-- Pipfile.lock
+|-- README.md
+|-- examples
+|-- generate_yaml.py
+|-- schemas
+|-- static
+`-- tests
+```
+
+**.github:** CI workflows to validate the schemas and update the github.io page
+
+**examples:** examples using the schemas
+
+**schemas:** the JSON schemas
+
+**static:** automatically generated files of the
+
+**tests:** tests for the schemas and the examples
+
+
+## Developer notes
 
 Install `pipenv`:
 
