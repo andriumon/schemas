@@ -89,7 +89,7 @@
             "default": "",
             "title": "The release-date of the indicator (YYYY-MM-DD",
             "examples": [
-                "1900-01-01",
+                "2000-01-01",
                 "2024-12-31"
             ],
             "format": "date",
