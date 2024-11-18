@@ -1,11 +1,3 @@
-<!-- Styling related -->
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-<!-- -->
-
 # EVERSE schemas
 
 This repository contains JSON schemas for the EVERSE project
@@ -18,14 +10,14 @@ This repository contains JSON schemas for the EVERSE project
 
 |Status| RS Quality attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|---|
-| <g>&check;</g> | RS Quality Indicator Identifier | identifier | dcterms:identifier | String |
-| <r>&cross;</r> | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
-| <g>&check;</g> | Name of the indicator | title | dcterms:title | String |
-| <g>&check;</g> | Description | description | dcterms:description | String |
-| <r>&cross;</r> | Keywords | keyword | dcat:keyword | String |
-| <r>&cross;</r> | RS Quality Dimension  | inDimension | dqv:inDimension | URL (category) |
-| <g>&check;</g> | Version | version | dcat:version | String |
-| <r>&cross;</r> | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
+| ✅ | RS Quality Indicator Identifier | identifier | dcterms:identifier | String |
+| ❌ | Contact (person or organization) | contactPoint | dcat:contactPoint | Person/Organization (URL) |
+| ✅ | Name of the indicator | title | dcterms:title | String |
+| ✅ | Description | description | dcterms:description | String |
+| ❌ | Keywords | keyword | dcat:keyword | String |
+| ❌ | RS Quality Dimension  | inDimension | dqv:inDimension | URL (category) |
+| ✅ | Version | version | dcat:version | String |
+| ❌ | Source (e.g., standard/tool where it came from) | source | dcterms:source | URL |
 
 
 ## Project setup
