@@ -1,0 +1,29 @@
+{
+  "identifier": "indicator_id",
+  "name": "indicator name",
+  "description": "a short description of indicator",
+  "keywords": [
+    "keyword-1",
+    "keyword-2"
+  ],
+  "category": [
+    "fair"
+  ],
+  "sub-category": [
+    "fair",
+    "accessible",
+    "interoperable",
+    "reusable"
+  ],
+  "release-date": "2024-10-31",
+  "version":"0.0.1",
+  "doi": "10.5281/zenodo.0000000",
+  "authors": {
+    "name": "maintainer name",
+    "type": [
+      "individual"
+    ],
+    "orcid": "https://orcid.org/0000-0000-0000-0000",
+    "email": "someone@somewhere.com"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Schema page</title>
+</head>
+<body>
+
+  <div class="center">
+    <h1>Available Schemas</h1>
+    <ul id="link-list"></ul>
+  </div>
+
+  <script>
+    // Embed the JSON data directly
+    const links = [
+      {"name": "indicator schema", "url": "indicator/indicator_schema.html"},
+      {"name": "data generator", "url": "data_generator.html"},
+    ];
+
+    const linkList = document.getElementById('link-list');
+    links.forEach(link => {
+      const listElement = document.createElement('li');
+      const linkElement = document.createElement('a');
+      linkElement.href = link.url;
+      linkElement.textContent = link.name;
+      listElement.appendChild(linkElement);
+      linkList.appendChild(listElement);
+    });
+  </script>
+</body>
+</html>
+
+<style type="text/css">
+  .center{
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 40%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin: 10px 0;
+    padding-left: var(--icon-space);
+    font-size:28px;
+  }
+
+  ul {
+    --icon-space: 1.5em;
+    list-style: none;
+    padding: 0;
+  }
+
+  li:before {
+    content: "\f0c1"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+  }
+</style>
