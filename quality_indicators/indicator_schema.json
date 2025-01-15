@@ -10,7 +10,7 @@
         "description",
         "keywords",
         "status",
-        "category",
+        "quality-dimension",
         "sub-category",
         "release-date",
         "doi",
@@ -62,20 +62,34 @@
             "enum": ["active", "deprecated"],
             "examples": ["active"]
         },
-        "category": {
+        "quality-dimension": {
             "type": "array",
             "default": [],
-            "title": "The type of the indicator",
+            "title": "The dimension of the indicator",
             "items": {
                 "type": "string",
-                "title": "The type of the indicator",
-                "enum": ["fair",
-                    "quality",
-                    "other"],
-                "examples": [
-                    "fair",
-                    "quality",
-                    "other"
+                "title": "The dimension of the indicator",
+                "enum": ["sustainability",
+                    "interoperability",
+                    "documentation",
+                    "accessibility",
+                    "fundability",
+                    "community",
+                    "security",
+                    "usability",
+                    "findability",
+                    "contribution"
+                ],
+                "examples": ["sustainability",
+                    "interoperability",
+                    "documentation",
+                    "accessibility",
+                    "fundability",
+                    "community",
+                    "security",
+                    "usability",
+                    "findability",
+                    "contribution"
                 ]
             }
         },
