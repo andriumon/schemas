@@ -9,6 +9,7 @@
         "name",
         "description",
         "keywords",
+        "status",
         "category",
         "sub-category",
         "release-date",
@@ -53,6 +54,13 @@
                     "keyword-2"
                 ]
             }
+        },
+        "status": {
+            "type": "string",
+            "default": "",
+            "title": "The status of the indicator",
+            "enum": ["active", "deprecated"],
+            "examples": ["active"]
         },
         "category": {
             "type": "array",
