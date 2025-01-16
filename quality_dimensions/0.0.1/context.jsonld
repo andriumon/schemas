@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "rsqd" : "https://w3id.org/everse/rsqd#",
+    "rdfs" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl"  : "http://www.w3.org/2002/07/owl#",
+    "identifier": { "@id": "dcterms:identifier", "@type": "@id"},
+    "title": { "@id": "dcterms:title", "@type": "http://www.w3.org/2001/XMLSchema#string"},
+    "description": { "@id": "dcterms:description", "@type": "http://www.w3.org/2001/XMLSchema#string"},
+    "source": { "@id": "dcterms:source", "@type": "@id"}
+  },
+  "@graph": [
+    {
+      "@id": "rsqd:SoftwareQualityDimension",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Software Quality Dimension",
+      "rdfs:comment": "A software quality dimension represents a general characteristic of software (e.g., Documentation, Performance, etc.)"
+    },
+     {
+      "@id" : "https://w3id.org/everse/rsqd#",
+      "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+      "dcterms:creator" : [ "Daniel Garijo","EVERSE Project" ],
+      "dcterms:created":"2024-12-17T09:00:00",
+      "title":"Research Software Quality Dimension vocabulary",
+      "identifier": {"@id": "https://w3id.org/everse/rsqd#", "@type": "@id"},
+      "owl:versionIRI": {"@id": "https://w3id.org/everse/rsqd/0.0.1", "@type": "@id"},
+      "dcterms:license": {"@id": "https://creativecommons.org/licenses/by/4.0/", "@type": "@id"}
+     }
+  ]
+}
