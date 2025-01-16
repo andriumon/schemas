@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "rsqd" : "https://w3id.org/everse/rsqd#",
+    "rdfs" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "identifier": { "@id": "dcterms:identifier", "@type": "@id"},
+    "title": { "@id": "dcterms:title", "@type": "@id"},
+    "description": { "@id": "dcterms:description", "@type": "@id"},
+    "source": { "@id": "dcterms:source", "@type": "@id"}
+  },
+  "@graph": [
+    {
+      "@id": "rsqd:SoftwareQualityDimension",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Software Quality Dimension",
+      "rdfs:comment": "A software quality dimension represents a general characteristic of software (e.g., Documentation, Performance, etc.)"
+    }
+  ]
+}
