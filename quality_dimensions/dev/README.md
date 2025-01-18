@@ -22,3 +22,17 @@ The following metadata attributes define a Research Quality dimension:
 |definition source|source|dcterms:source|rdfs:Literal (URL)|
 
 To see an example of a dimension, see [the template YAML file](dimensions_template.yaml) stored in this repository.
+
+The latest version of the vocabulary is accessible at [https://w3id.org/everse/rsqd](https://w3id.org/everse/rsqd)
+
+To obtain the JSON-LD context, just perform content negotiation as follows:
+
+```
+curl -sH "accept:application/ld+json" -L https://w3id.org/everse/rsqd
+```
+
+The vocabulary has versioning enabled. To get a particular version add the version number in the URL:
+
+```
+curl -sH "accept:application/ld+json" -L https://w3id.org/everse/rsqd/0.0.1
+```
