@@ -222,6 +222,16 @@
                     { "$ref": "#/$defs/person" }
                 ]
             }
+        },
+        "contacts": {
+            "type": "array",
+            "default": [],
+            "title": "Contacts of the indicator",
+            "contains": {
+                "oneOf": [
+                    { "$ref": "#/$defs/person" }
+                ]
+            }
         }
     }
 }
