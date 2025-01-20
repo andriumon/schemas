@@ -147,7 +147,7 @@
             "default": "",
             "title": "The description of the indicator",
             "examples": [
-                "a short description of the indicator"
+                "a short description"
             ]
         },
         "keywords": {
@@ -177,28 +177,14 @@
             "title": "The dimension of the indicator",
             "items": {
                 "type": "string",
-                "title": "The dimension of the indicator",
-                "enum": ["sustainability",
-                    "interoperability",
-                    "documentation",
-                    "accessibility",
-                    "fundability",
-                    "community",
-                    "security",
-                    "usability",
-                    "findability",
-                    "contribution"
+                "title": "The quality dimensions of the indicator",
+                "enum": ["openness",
+                    "FAIRness",
+                    "sustainability"
                 ],
-                "examples": ["sustainability",
-                    "interoperability",
-                    "documentation",
-                    "accessibility",
-                    "fundability",
-                    "community",
-                    "security",
-                    "usability",
-                    "findability",
-                    "contribution"
+                "examples": ["openness",
+                    "FAIRness",
+                    "sustainability"
                 ]
             }
         },
