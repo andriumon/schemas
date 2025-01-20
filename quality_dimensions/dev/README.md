@@ -10,15 +10,16 @@ Namespaces used in this document:
 
 | Namespace prefix | Namespace URI |
 |---|---|
+|schema|[http://schema.org/](http://schema.org/)| 
 |dcterms|[http://purl.org/dc/terms/](http://purl.org/dc/terms/)|
 
 The following metadata attributes define a Research Quality dimension:
 
 | Attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|
-|persistent identifier|identifier|dcterms:identifier|rdfs:Literal (String)|
-|Dimension name|name|dcterms:title|rdfs:Literal (String)|
-|Brief description|description|dcterms:description|rdfs:Literal (String)|
+|persistent identifier|identifier|schema:identifier|schema:Text (String)|
+|Dimension name|name|schema:name|schema:Text (String)|
+|Brief description|description|schema:description|schema:Text (String)|
 |definition source|source|dcterms:source|rdfs:Literal (URL)|
 
 To see an example of a dimension, see [the template YAML file](dimensions_template.yaml) stored in this repository.

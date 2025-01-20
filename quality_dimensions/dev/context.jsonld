@@ -1,12 +1,13 @@
 {
   "@context": {
+    "schema": "http://schema.org/", 
     "dcterms": "http://purl.org/dc/terms/",
     "rsqd" : "https://w3id.org/everse/rsqd#",
-    "rdfs" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "owl"  : "http://www.w3.org/2002/07/owl#",
-    "identifier": { "@id": "dcterms:identifier", "@type": "@id"},
-    "title": { "@id": "dcterms:title", "@type": "http://www.w3.org/2001/XMLSchema#string"},
-    "description": { "@id": "dcterms:description", "@type": "http://www.w3.org/2001/XMLSchema#string"},
+    "identifier": { "@id": "schema:identifier", "@type": "@id"},
+    "name": { "@id": "schema:name", "@type": "schema:Text"},
+    "description": { "@id": "schema:description", "@type": "schema:Text"},
     "source": { "@id": "dcterms:source", "@type": "@id"}
   },
   "@graph": [
@@ -19,12 +20,12 @@
      {
       "@id" : "https://w3id.org/everse/rsqd#",
       "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-      "dcterms:creator" : [ "Daniel Garijo","EVERSE Project" ],
-      "dcterms:created":"2024-12-17T09:00:00",
-      "title":"Research Software Quality Dimension vocabulary",
+      "schema:creator" : [ "Daniel Garijo","EVERSE Project" ],
+      "schema:dateCreated":"2024-12-17T09:00:00",
+      "name":"Research Software Quality Dimension vocabulary",
       "identifier": {"@id": "https://w3id.org/everse/rsqd#", "@type": "@id"},
       "owl:versionIRI": {"@id": "https://w3id.org/everse/rsqd/0.0.1", "@type": "@id"},
-      "dcterms:license": {"@id": "https://creativecommons.org/licenses/by/4.0/", "@type": "@id"}
+      "schema:license": {"@id": "https://creativecommons.org/licenses/by/4.0/", "@type": "@id"}
      }
   ]
 }
