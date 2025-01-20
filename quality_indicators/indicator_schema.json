@@ -24,7 +24,6 @@
             "title": "A person",
             "required": [
                 "name",
-                "orcid",
                 "email"
             ],
             "properties": {
@@ -33,7 +32,7 @@
                     "default": "",
                     "title": "The name of the person",
                     "examples": [
-                        "maintainer name"
+                        "Jane Doe"
                     ]
                 },
                 "orcid": {
@@ -55,7 +54,7 @@
                 "gitlab": {
                     "type": "string",
                     "default": "",
-                    "title": "The Gitlab username of the person",
+                    "title": "The GitLab username of the person",
                     "examples": [
                         "janedoe"
                     ]
