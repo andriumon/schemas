@@ -14,8 +14,84 @@
         "sub-category",
         "release-date",
         "doi",
-        "authors"
+        "authors",
+        "contacts"
     ],
+    "$defs": {
+        "person": {
+            "type": "object",
+            "default": {},
+            "title": "A person",
+            "required": [
+                "name",
+                "orcid",
+                "email"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name of the person",
+                    "examples": [
+                        "maintainer name"
+                    ]
+                },
+                "orcid": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The orcid of the person",
+                    "examples": [
+                        "https://orcid.org/0000-0000-0000-0000"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email of the person",
+                    "format": "email",
+                    "examples": [
+                        "someone@somewhere.com"
+                    ]
+                },
+                "affiliation": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The affiliation of the person",
+                    "examples": [
+                        "Some University"
+                    ]
+                }
+            }
+        },
+        "organization": {
+            "type": "object",
+            "default": {},
+            "title": "An organization",
+            "required": [
+                "name",
+                "email"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name of the person",
+                    "examples": [
+                        "maintainer name"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email of the person",
+                    "format": "email",
+                    "examples": [
+                        "someone@somewhere.com"
+                    ]
+                }
+            }
+        }
+    },
     "properties": {
         "identifier": {
             "type": "string",
@@ -138,55 +214,13 @@
             ]
         },
         "authors": {
-            "type": "object",
+            "type": "array",
             "default": {},
             "title": "The authors of the indicator",
-            "required": [
-                "name",
-                "type",
-                "orcid",
-                "email"
-            ],
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The name of the authors",
-                    "examples": [
-                        "maintainer name"
-                    ]
-                },
-                "type": {
-                    "type": "array",
-                    "default": [],
-                    "title": "The type of the authors",
-                    "items": {
-                        "type": "string",
-                        "title": "A of the authors",
-                        "enum": ["individual", "entity"],
-                        "examples": [
-                            "individual",
-                            "entity"
-                        ]
-                    }
-                },
-                "orcid": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The orcid of the authors",
-                    "examples": [
-                        "https://orcid.org/0000-0000-0000-0000"
-                    ]
-                },
-                "email": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The email of the authors",
-                    "format": "email",
-                    "examples": [
-                        "someone@somewhere.com"
-                    ]
-                }
+            "contains": {
+                "oneOf": [
+                    { "$ref": "#/$defs/person" }
+                ]
             }
         }
     }
