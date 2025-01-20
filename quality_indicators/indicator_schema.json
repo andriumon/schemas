@@ -69,24 +69,24 @@
             "title": "An organization",
             "required": [
                 "name",
-                "email"
+                "url"
             ],
             "properties": {
                 "name": {
                     "type": "string",
                     "default": "",
-                    "title": "The name of the person",
+                    "title": "The name of the organization",
                     "examples": [
                         "maintainer name"
                     ]
                 },
-                "email": {
+                "url": {
                     "type": "string",
                     "default": "",
-                    "title": "The email of the person",
-                    "format": "email",
+                    "title": "The url of the organization",
+                    "format": "url",
                     "examples": [
-                        "someone@somewhere.com"
+                        "https://everse.software"
                     ]
                 }
             }
