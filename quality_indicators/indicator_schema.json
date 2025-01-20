@@ -185,21 +185,6 @@
                 ]
             }
         },
-        "sub-category": {
-            "type": "array",
-            "default": [],
-            "title": "The subtype of the indicator",
-            "items": {
-                "type": "string",
-                "title": "A Schema",
-                "examples": [
-                    "fair",
-                    "accessible",
-                    "interoperable",
-                    "reusable"
-                ]
-            }
-        },
         "release-date": {
             "type": "string",
             "default": "",
