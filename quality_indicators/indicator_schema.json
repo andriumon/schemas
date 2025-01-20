@@ -76,6 +76,15 @@
                     "examples": [
                         "Some University"
                     ]
+                },
+                "image-url": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The url of the person's image (avatar)",
+                    "format": "url",
+                    "examples": [
+                        "https://everse.software/image.png"
+                    ]
                 }
             }
         },
@@ -103,6 +112,15 @@
                     "format": "url",
                     "examples": [
                         "https://everse.software"
+                    ]
+                },
+                "image-url": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The url of the organization image",
+                    "format": "url",
+                    "examples": [
+                        "https://everse.software/image.png"
                     ]
                 }
             }
