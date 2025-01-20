@@ -219,7 +219,8 @@
             "title": "The authors of the indicator",
             "contains": {
                 "oneOf": [
-                    { "$ref": "#/$defs/person" }
+                    { "$ref": "#/$defs/person" },
+                    { "$ref": "#/$defs/organization" }
                 ]
             }
         },
@@ -229,7 +230,8 @@
             "title": "Contacts of the indicator",
             "contains": {
                 "oneOf": [
-                    { "$ref": "#/$defs/person" }
+                    { "$ref": "#/$defs/person" },
+                    { "$ref": "#/$defs/organization" }
                 ]
             }
         }
