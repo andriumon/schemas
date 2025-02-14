@@ -5,14 +5,10 @@
     "default": {},
     "title": "EVERSE indicator schema",
     "required": [
-        "identifier",
-        "name",
-        "description",
-        "status",
-        "quality-dimension",
-        "release-date",
         "authors",
-        "contacts"
+        "contacts",
+        "identifier",
+        "release-date"
     ],
     "$defs": {
         "person": {
