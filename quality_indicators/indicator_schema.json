@@ -11,7 +11,6 @@
         "status",
         "quality-dimension",
         "release-date",
-        "doi",
         "authors",
         "contacts"
     ],
@@ -204,15 +203,6 @@
             "examples": [
                 "0.0.1",
                 "v0.0.1"
-            ]
-        },
-        "doi": {
-            "type": "string",
-            "default": "",
-            "title": "The doi of the indicator",
-            "pattern": "^10\\.\\d{4,9}(\\.\\d+)?/[-._;()/:a-zA-Z0-9]+$",
-            "examples": [
-                "10.5281/zenodo.0000000"
             ]
         },
         "authors": {
