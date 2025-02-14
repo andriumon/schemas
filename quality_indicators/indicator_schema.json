@@ -11,112 +11,6 @@
         "release-date"
     ],
     "$defs": {
-        "person": {
-            "type": "object",
-            "default": {},
-            "title": "A person",
-            "required": [
-                "name",
-                "email"
-            ],
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The name of the person",
-                    "examples": [
-                        "Jane Doe"
-                    ]
-                },
-                "orcid": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The orcid of the person",
-                    "examples": [
-                        "https://orcid.org/0000-0000-0000-0000"
-                    ]
-                },
-                "github": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The GitHub username of the person",
-                    "examples": [
-                        "johndoe"
-                    ]
-                },
-                "gitlab": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The GitLab username of the person",
-                    "examples": [
-                        "janedoe"
-                    ]
-                },
-                "email": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The email of the person",
-                    "format": "email",
-                    "examples": [
-                        "someone@somewhere.com"
-                    ]
-                },
-                "affiliation": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The affiliation of the person",
-                    "examples": [
-                        "Some University"
-                    ]
-                },
-                "image-url": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The url of the person's image (avatar)",
-                    "format": "url",
-                    "examples": [
-                        "https://everse.software/image.png"
-                    ]
-                }
-            }
-        },
-        "organization": {
-            "type": "object",
-            "default": {},
-            "title": "An organization",
-            "required": [
-                "name",
-                "url"
-            ],
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The name of the organization",
-                    "examples": [
-                        "maintainer name"
-                    ]
-                },
-                "url": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The url of the organization",
-                    "format": "url",
-                    "examples": [
-                        "https://everse.software"
-                    ]
-                },
-                "image-url": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The url of the organization image",
-                    "format": "url",
-                    "examples": [
-                        "https://everse.software/image.png"
-                    ]
-                }
-            }
-        }
     },
     "properties": {
         "identifier": {
@@ -205,22 +99,16 @@
             "type": "array",
             "default": {},
             "title": "The authors of the indicator",
-            "contains": {
-                "oneOf": [
-                    { "$ref": "#/$defs/person" },
-                    { "$ref": "#/$defs/organization" }
-                ]
+            "items": {
+                "type": "string"
             }
         },
         "contacts": {
             "type": "array",
-            "default": [],
+            "default": {},
             "title": "Contacts of the indicator",
-            "contains": {
-                "oneOf": [
-                    { "$ref": "#/$defs/person" },
-                    { "$ref": "#/$defs/organization" }
-                ]
+            "items": {
+                "type": "string"
             }
         }
     }
