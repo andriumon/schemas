@@ -55,7 +55,7 @@
             "type": "string",
             "default": "",
             "title": "The status of the indicator",
-            "enum": ["active", "deprecated"],
+            "enum": ["active", "deprecated", "WIP"],
             "examples": ["active"]
         },
         "quality-dimension": {
