@@ -1,11 +1,11 @@
-# RS Quality indicators metadata schema
+# Research Software Quality indicators metadata schema
 - Version: 0.0.1
 - Identifier: https://w3id.org/everse/rsqi#
 - Version identifier: https://w3id.org/everse/rsqi/0.0.1
 - Date: Dect 17th, 2024
 
 
-A repository to describe the RS quality indicators used in the EVERSE project, as well as a template for the RSQKit.
+A repository to describe the Research Software Quality (RS Quality) indicators used in the EVERSE project, as well as a template for the RSQKit.
 
 Namespaces used in this document:
 
