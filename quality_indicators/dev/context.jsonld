@@ -22,7 +22,7 @@
   },
   "@graph": [
     {
-      "@id": "rsqd:SoftwareQualityIndicator",
+      "@id": "rsqi:SoftwareQualityIndicator",
       "@type": "rdfs:Class",
       "rdfs:label": "Software Quality Indicator",
       "rdfs:comment": "A software quality indicator represents a specific aspect software that can be measured (e.g., FAIRness, test coverage, documentation coverage, etc.)"
