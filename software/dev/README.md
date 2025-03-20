@@ -31,7 +31,7 @@ The following attributes describe a RS tool (please note that not all are mandat
 | How to use the tool? (service, CI/CD, etc.) | rs:howToUse | schema:URL (string)|
 | Name of the tool | schema:name | schema:Text (string)|
 | Identifier | schema:identifier | schema:URL (string)|
-| Is accessible for free? | schema:isAccessibleForFree | schema:Text (string)|
+| Is accessible for free? | schema:isAccessibleForFree | schema:Boolean|
 | Quality indicator(s) the tool addresses | rs:hasQualityIndicator | schema:Text (string)|
 | Quality dimension(s) the tool addresses | schema:hasQualityDimension | schema:Text (string)|
 | License | schema:license | schema:License (URL)|
