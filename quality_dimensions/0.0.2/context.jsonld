@@ -6,9 +6,9 @@
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "owl"  : "http://www.w3.org/2002/07/owl#",
     "prov"  : "http://www.w3.org/ns/prov#",
-    "identifier": { "@id": "schema:identifier", "@type": "@id"},
-    "name": { "@id": "schema:name", "@type": "schema:Text"},
-    "description": { "@id": "schema:description", "@type": "schema:Text"},
+    "identifier": { "@id": "schema:identifier"},
+    "name": { "@id": "schema:name"},
+    "description": { "@id": "schema:description"},
     "source": { "@id": "dcterms:source", "@type": "@id"},
 
     "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension", "@type": "@id"}
