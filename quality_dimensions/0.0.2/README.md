@@ -1,6 +1,6 @@
 # RS Quality dimensions
 - Version: 0.0.2
-- Identifier (latest version): https://w3id.org/everse/rsqd#
+- Identifier: https://w3id.org/everse/rsqd#
 - Version identifier: https://w3id.org/everse/rsqd/0.0.2
 - Previus version: https://w3id.org/everse/rsqd/0.0.1
 - Date: April 1st, 2025
