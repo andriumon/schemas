@@ -2,6 +2,7 @@
 - Version: 0.0.2
 - Identifier: https://w3id.org/everse/rsqi#
 - Version identifier: https://w3id.org/everse/rsqi/0.0.2
+- Previous version: https://w3id.org/everse/rsqi/0.0.1
 - Date: April 3rd, 2025
 - Author: Daniel Garijo, Faruk Biden, Thomas Vuillaume, EVERSE Consortium
 
@@ -14,9 +15,7 @@ Namespaces used in this document:
 |---|---|
 |dcat|[http://www.w3.org/ns/dcat#](http://www.w3.org/ns/dcat#)|
 |dcterms|[http://purl.org/dc/terms/](http://purl.org/dc/terms/)|
-|ftr|[https://w3id.org/ftr#](https://w3id.org/ftr#)|
 |dqv|[http://www.w3.org/ns/dqv#](http://www.w3.org/ns/dqv#)|
-|vcard|[http://www.w3.org/2006/vcard/ns#](http://www.w3.org/2006/vcard/ns#)|
 |rsqd|[https://w3id.org/everse/rsqd#](https://w3id.org/everse/rsqd#)|
 
 ### Definitions
@@ -34,19 +33,19 @@ The following metadata attributes define a Research Software Quality indicator:
 
 | Attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|
-| Contact (person or organization) for the indicator | contact | dcat:contactPoint | [schema:Person](https://schema.org/Person) or [schema:Organization](https://schema.org/Organization) |
-| Author | author | schema:author | [schema:Person](https://schema.org/Person) or [schema:Organization](https://schema.org/Organization) |
-| Creation date | created | schema:dateCreated | [schema:DateTime](https://schema.org/DateTime) (String) |
-| Name of the indicator | name | schema:name | [schema:Text](https://schema.org/Text) (String)|
-| Description | description | schema:description | schema:Text (String)|
-| Indicator Status (active, deprecated, etc.) | status | [schema:creativeWorkStatus](https://schema.org/creativeWorkStatus) | xsd:Literal (String)|
-| Keywords | keywords | schema:keywords | rdfs:Literal (String)|
-| RS Quality Dimension  | qualityDimension | dqv:inDimension | rsqd:SoftwareQualityDimension (URL) |
-| RS Quality Indicator Identifier | identifier | schema:identifier | rdfs:Literal (String) |
-| Source (e.g., standard/tool where it came from) | source | dcterms:source | xsd:anyURI (URL) |
+| Contact (person or organization) for the indicator | contact | [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint) | [schema:Person](https://schema.org/Person) or [schema:Organization](https://schema.org/Organization) |
+| Author | author | [schema:author](https://schema.org/author) | [schema:Person](https://schema.org/Person) or [schema:Organization](https://schema.org/Organization) |
+| Creation date | created | [schema:dateCreated](https://schema.org/dateCreated) | [schema:DateTime](https://schema.org/DateTime) (String) |
+| Name of the indicator | name | [schema:name](https://schema.org/name) | [schema:Text](https://schema.org/Text) (String)|
+| Description | description | [schema:description](https://schema.org/description) | [schema:Text](https://schema.org/Text) (String)|
+| Indicator Status (active, deprecated, etc.) | status | [schema:creativeWorkStatus](https://schema.org/creativeWorkStatus) | [schema:Text](https://schema.org/Text) (String)|
+| Keywords | keywords | [schema:keywords](https://schema.org/keywords) | [schema:Text](https://schema.org/Text) (String)|
+| RS Quality Dimension  | qualityDimension | [dqv:inDimension](http://www.w3.org/ns/dqv#inDimension) | [rsqd:SoftwareQualityDimension](https://w3id.org/everse/rsqd#) (URL) |
+| RS Quality Indicator Identifier | identifier | [schema:identifier](https://schema.org/identifier) | [schema:Text](https://schema.org/Text) (String) |
+| Source (e.g., standard/tool where it came from) | source | [dcterms:source](http://purl.org/dc/terms/source) | [schema:URL](https://schema.org/URL) (URL) |
 | Version | version | [schema:version](https://schema.org/version) | [schema:Text](https://schema.org/Text) (String)|
 
-The indicator `description` should address:
+The `description` of an indicator should address:
 ```
 ### What is being measured?
     Explain what you are measuring
@@ -60,9 +59,9 @@ The indicator `description` should address:
     What outcomes are pass/fail
 ```
 
-To see an example of an indicator, see [the template YAML file](./indicators_template.yaml) stored in this repository.
+To see an example of an indicator, see the [JSON file](example.json) or the [the YAML file](example.yaml) stored in this repository.
 
-The latest version of the vocabulary is accessible at [https://w3id.org/everse/rsqi](https://w3id.org/everse/rsqi)
+The latest version of the vocabulary is accessible at [https://w3id.org/everse/rsqi](https://w3id.org/everse/rsqi).
 
 To obtain the JSON-LD context, just perform content negotiation as follows:
 
@@ -73,6 +72,6 @@ curl -sH "accept:application/ld+json" -L https://w3id.org/everse/rsqi
 The vocabulary has versioning enabled. To get a particular version add the version number in the URL:
 
 ```
-curl -sH "accept:application/ld+json" -L https://w3id.org/everse/rsqi/0.0.1
+curl -sH "accept:application/ld+json" -L https://w3id.org/everse/rsqi/0.0.2
 ```
 
