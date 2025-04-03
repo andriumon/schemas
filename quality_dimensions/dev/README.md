@@ -12,11 +12,12 @@ Namespaces used in this document:
 
 | Namespace prefix | Namespace URI |
 |---|---|
+|rsqd|[http://purl.org/dc/terms/](https://w3id.org/everse/rsqd#)|
 |schema|[http://schema.org/](http://schema.org/)| 
 |dcterms|[http://purl.org/dc/terms/](http://purl.org/dc/terms/)|
 
 ### Definitions
-#### Research Software Quality Dimension
+#### Research Software Quality Dimension (rsqd:ResearchSoftwareQualityDimension) 
 A research software quality dimension represents criteria relevant for assessing software quality (e.g., Documentation, Performance, etc.). Each quality dimension must have one or more indicator to measure it. Dimensions may be defined in a hierarchy.
 
 This definition inspired by W3C Data Quality Vocabulary (https://www.w3.org/TR/vocab-dqv/#dqv:Dimension) 
@@ -25,10 +26,11 @@ The following metadata attributes define a Research Software Quality dimension:
 
 | Attribute | Key (YAML) | Term (mapping) | Expected value |
 |---|---|---|---|
-|Persistent identifier |identifier|schema:identifier|schema:Text (String)|
-|Name|name|schema:name|schema:Text (String)|
-|Brief description|description|schema:description|schema:Text (String)|
-|Definition source (in case the quality dimension is defined elsewhere, e.g., ISO standard)|source|dcterms:source|schema:URL|
+|Persistent identifier |identifier|[schema:identifier](https://schema.org/identifier)|[schema:Text](https://schema.org/Text) (String)|
+|Name|name|[schema:name](https://schema.org/name)|[schema:Text](https://schema.org/Text) (String)|
+|Brief description|description|[schema:description]((https://schema.org/description))|[schema:Text](https://schema.org/Text) (String)|
+|Is part of another dimension (in case there is a hierarcy)|isPartOf|[schema:isPartOf](https://schema.org/isPartOf)|[rsqd:SoftwareQualityDimension](https://w3id.org/everse/rsqd#research-software-quality-dimension) (URL)|
+|Definition source (in case the quality dimension is defined elsewhere, e.g., ISO standard)|source|[dcterms:source](http://purl.org/dc/terms/source)|[schema:URL](https://schema.org/URL)|
 
 To see an example of a dimension, see the [JSON file](example.json) or the [the YAML file](example.yaml) stored in this repository.
 

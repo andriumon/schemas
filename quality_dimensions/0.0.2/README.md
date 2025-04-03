@@ -1,6 +1,6 @@
 # RS Quality dimensions
 - Version: 0.0.2
-- Identifier: https://w3id.org/everse/rsqd#
+- Identifier (latest version): https://w3id.org/everse/rsqd#
 - Version identifier: https://w3id.org/everse/rsqd/0.0.2
 - Previus version: https://w3id.org/everse/rsqd/0.0.1
 - Date: April 1st, 2025
@@ -28,6 +28,7 @@ The following metadata attributes define a Research Software Quality dimension:
 |Persistent identifier |identifier|schema:identifier|schema:Text (String)|
 |Name|name|schema:name|schema:Text (String)|
 |Brief description|description|schema:description|schema:Text (String)|
+|Is part of another dimension (in case there is a hierarcy)|isPartOf|schema:isPartOf|schema:CreativeWork (URL)|
 |Definition source (in case the quality dimension is defined elsewhere, e.g., ISO standard)|source|dcterms:source|schema:URL|
 
 To see an example of a dimension, see the [JSON file](example.json) or the [the YAML file](example.yaml) stored in this repository.
