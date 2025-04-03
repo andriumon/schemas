@@ -1,9 +1,9 @@
 {
   "@context": "https://w3id.org/everse/rsqi#",
-  "@id": "https://w3id.org/everse/i/dimensions/codemeta_completeness",
+  "@id": "https://w3id.org/everse/i/indicators/codemeta_completeness",
   "@type": "SoftwareQualityIndicator",
   "name": "CodeMeta Completeness",
-  "identifier":"https://w3id.org/everse/i/dimensions/codemeta_completeness",
+  "identifier":"https://w3id.org/everse/i/indicators/codemeta_completeness",
   "description": "Completeness of a codemeta.json file",
   "status": "Active",
   "keywords": ["codemeta", "metadata", "fair"],   
