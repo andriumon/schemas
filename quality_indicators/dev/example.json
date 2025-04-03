@@ -1,9 +1,16 @@
 {
   "@context": "https://w3id.org/everse/rsqi#",
-  "@id": "https://example.com/identifier_dimension",
+  "@id": "https://w3id.org/everse/i/dimensions/codemeta_completeness",
   "@type": "SoftwareQualityIndicator",
-  "name": "FAIRNess",
-  "identifier":"https://example.com/identifier_dimension",
-  "description": "Dimension related to measuring the aspects of the Findable, Accessible, Interoperable and Reusable principles",
-  "source": {"@id":"https://www.nature.com/articles/sdata201618", "name": "The FAIR Guiding Principles for scientific data management and stewardship"}   
-}
+  "name": "CodeMeta Completeness",
+  "identifier":"https://w3id.org/everse/i/dimensions/codemeta_completeness",
+  "description": "Completeness of a codemeta.json file",
+  "status": "Active",
+  "keywords": ["codemeta", "metadata", "fair"],   
+  "version": "1.0.0",
+  "contactPoint": {
+      "@type": "schema:Person",
+      "name": "Thomas Vuillaume"
+    },
+  "hasQualityDimension": {"@id":"https://w3id.org/everse/i/dimensions/fairness"}
+}      
