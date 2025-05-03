@@ -8,6 +8,7 @@
     "prov"  : "http://www.w3.org/ns/prov#",
     "identifier": { "@id": "schema:identifier"},
     "name": { "@id": "schema:name"},
+    "url": { "@id": "schema:url"},
     "description": { "@id": "schema:description"},
     "source": { "@id": "dcterms:source", "@type": "@id"},
     "isPartOf": { "@id": "schema:isPartOf", "@type": "@id"},
