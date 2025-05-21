@@ -29,7 +29,7 @@ The following attributes describe a RS tool (please note that not all are mandat
 | Applies to Programming language | rs:appliesToProgrammingLanguage | schema:Text (string)| N/A |
 | Author | schema:author | schema:Person or schema:Organization (URL) | N/A |
 | Description | schema:description | schema:Text (string)| N/A |
-| How to use the tool? | rs:howToUse | schema:Text (string) | service, CI/CD, command-line |
+| How to use the tool? | rs:howToUse | schema:Text (string) | online-service, CI/CD, command-line |
 | Name of the tool | schema:name | schema:Text (string)| N/A |
 | Identifier | schema:identifier | schema:URL (string)| N/A |
 | Is accessible for free? | schema:isAccessibleForFree | schema:Boolean| N/A |
@@ -58,7 +58,7 @@ Each of the dimensions has an identifier: `https://w3id.org/everse/rs#{id}` wher
 
 The values for this property indicate how a software application can be used (can be a list if several are applicable).
 The recognized values are:
-- `service`: The software is available as an online service, e.g., via a web interface or API
+- `online-service`: The software is available as an online service, e.g., via a web interface or API
 - `CI/CD`: The software is available as part of a continuous integration and/or continuous deployment pipeline
 - `command-line`: The software is available as a command line interface, e.g., via a command line tool or script
 
