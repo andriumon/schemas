@@ -35,8 +35,8 @@ The following attributes describe a RS tool (please note that not all are mandat
 | Is accessible for free? | schema:isAccessibleForFree | schema:Boolean| N/A |
 | Quality indicator(s) the tool addresses | rs:hasQualityIndicator | rsqi:SoftwareQualityIndicator (URL) | N/A |
 | Quality dimension(s) the tool addresses | rs:hasQualityDimension | rsqd:SoftwareQualityDimension (URL) | See https://everse.software/indicators/website/dimensions.html |
-| License | schema:license | schema:License (URL)| N/A |
-| Maintainer | codemeta:maintainer | schema:Person or schema:Organization (URL)| N/A |
+| License | schema:license | schema:License (URL or CreativeWork)| N/A |
+| Maintainer | codemeta:maintainer | schema:Person or schema:Organization | N/A |
 | URL | schema:url | schema:URL (string)| N/A |
 | Cluster/Community using the tool, if specific | rs:usedBy | schema:Text (string) | ENVRI, ESCAPE, LS-RI, PaNOSC, SSHOC |
 
