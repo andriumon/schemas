@@ -50,7 +50,7 @@ Each of the categories have an identifier: `https://w3id.org/everse/rs#{id}` whe
 
 ### Quality dimensions
 
-The dimensions recognized are described in https://everse.software/indicators/website/dimensions.html
+The dimensions recognized are described in https://w3id.org/everse/i/dimensions/
 
 Each of the dimensions has an identifier: `https://w3id.org/everse/rs#{id}` where the id is one of the keys used in the list above (e.g., `https://w3id.org/everse/rs#FAIRness`)
 
