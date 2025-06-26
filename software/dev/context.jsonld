@@ -11,6 +11,8 @@
 
     "SoftwareQualityIndicator": "rsqi:SoftwareQualityIndicator",
     "SoftwareQualityDimension": "rsqd:SoftwareQualityDimension",
+    "maintainer": "codemeta:maintainer",
+
     "SoftwareApplication": "schema:SoftwareApplication",
     "applicationCategory": { "@id": "schema:applicationCategory", "@type": "@id" },
     "author": { "@id": "schema:author", "@type": "@id" },
@@ -21,11 +23,6 @@
     "isAccessibleForFree": "schema:isAccessibleForFree",
     "license": { "@id": "schema:license", "@type": "@id" },
     "dateCreated": { "@id": "schema:dateCreated", "@type": "@id" },
-    "domainIncludes": { "@id": "schema:SoftwareApplication", "@type": "@id" },
-
-    "rangeIncludes": { "@id": "rsqd:SoftwareQualityDimension", "@type": "@id" },
-
-    "maintainer": "codemeta:maintainer",
 
     "hasQualityDimension": { "@id": "rs:hasQualityDimension", "@type": "@id" },
     "hasQualityIndicator": { "@id": "rs:hasQualityIndicator", "@type": "@id" },
@@ -41,23 +38,23 @@
   },
   "@graph": [
     {
-      "@id": "rs:hasQualityDimension",
+      "@id": "hasQualityDimension",
       "@type": "rdf:Property",
       "rdfs:label": "has quality dimension",
       "rdfs:comment": "Property designed to link a software tool with its corresponding quality dimensions.",
       "domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "rsqd:SoftwareQualityDimension" }
+      "rangeIncludes": { "@id": "SoftwareQualityDimension" }
     },
     {
-      "@id": "rs:hasQualityIndicator",
+      "@id": "hasQualityIndicator",
       "@type": "rdf:Property",
       "rdfs:label": "has quality indicator",
       "rdfs:comment": "Property that links a software application with its corresponding quality indicators.",
       "domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "rsqi:SoftwareQualityIndicator" }
+      "rangeIncludes": { "@id": "SoftwareQualityIndicator" }
     },
     {
-      "@id": "rs:howToUse",
+      "@id": "howToUse",
       "@type": "rdf:Property",
       "rdfs:label": "howToUse",
       "rdfs:comment": "Property that indicates how a software application is expected to be used (command line, CI/CD, service, etc.).",
@@ -65,7 +62,7 @@
       "rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "rs:usedBy",
+      "@id": "usedBy",
       "@type": "rdf:Property",
       "rdfs:label": "Used by",
       "rdfs:comment": "Property that indicates how a software application is used by a science cluster.",
@@ -73,7 +70,7 @@
       "rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "rs:appliesToProgrammingLanguage",
+      "@id": "appliesToProgrammingLanguage",
       "@type": "rdf:Property",
       "rdfs:label": "Applies to programming language",
       "rdfs:comment": "Property that indicates how a software tool applies to a given programming language.",
@@ -81,42 +78,42 @@
       "rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "rs:FAIRness",
-      "@type": "rsqd:SoftwareQualityDimension",
+      "@id": "FAIRness",
+      "@type": "SoftwareQualityDimension",
       "rdfs:label": "FAIRness",
       "rdfs:comment": "Quality dimension related to the compliance of a software tool with the Findable, Accessible, Interoperable and Reusable (FAIR) principles."
     },
     {
-      "@id": "rs:Sustainability",
-      "@type": "rsqd:SoftwareQualityDimension",
+      "@id": "Sustainability",
+      "@type": "SoftwareQualityDimension",
       "rdfs:label": "Sustainability",
       "rdfs:comment": "Quality dimension related to the compliance of a software tool with aspects related to Functional sustainability, Reproducibility, Long-term usability, Portability, Maintainability, Documentation, Usability, Code analysis, Security, Community and Resource efficiency."
     },
     {
-      "@id": "rs:Openness",
-      "@type": "rsqd:SoftwareQualityDimension",
+      "@id": "Openness",
+      "@type": "SoftwareQualityDimension",
       "rdfs:label": "Openness",
       "rdfs:comment": "Quality dimension related to the compliance of a software tool with best practices for Open Source."
     },
     {
-      "@id": "rs:AnalysisCode",
+      "@id": "AnalysisCode",
       "rdfs:label": "Analysis Code",
       "rdfs:comment": "Software tier type used to categorize scripts and tools designed to support a research publication or investigation, with a low level of maturity"
     },
     {
-      "@id": "rs:PrototypeTool",
+      "@id": "PrototypeTool",
       "rdfs:label": "Prototype tool",
       "rdfs:comment": "Software tier type used to categorize tools designed to support a research publication or investigation that have reached a level of maturity and reuse among the community"
     },
     {
-      "@id": "rs:ResearchInfrastructureSoftware",
+      "@id": "ResearchInfrastructureSoftware",
       "rdfs:label": "Research infrasturcture software",
       "rdfs:comment": "Software tier type used to categorize mature tools that are used by one or several Research Infrastructures and/or science communities"
     },
     {
       "@id": "https://w3id.org/everse/rs#",
       "@type": [ "http://www.w3.org/2002/07/owl#Ontology" ],
-      "creator": [ "Daniel Garijo", "Thomas Villaume", "EVERSE Project" ],
+      "creator": [ "Daniel Garijo", "Thomas Villaume", "Faruk Diblen", "EVERSE Project" ],
       "dateCreated": "2025-01-20T09:00:00",
       "name": "EVERSE Research Software vocabulary",
       "identifier": { "@id": "https://w3id.org/everse/rs#", "@type": "@id" },
