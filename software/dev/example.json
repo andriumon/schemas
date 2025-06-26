@@ -9,5 +9,5 @@
   "isAccessibleForFree": true,
   "hasQualityDimension": "FAIRness",
   "howToUse": [ "CI/CD", "command-line" ],
-  "license": "https://spdx.org/licenses/Apache-2.0.html"
+  "license": "https://spdx.org/licenses/Apache-2.0"
 }
