@@ -1,6 +1,5 @@
 {
   "@context": {
-    "schema": "http://schema.org/",
     "rs": "https://w3id.org/everse/rs#"
   },
   "@id": "https://example.org/howfairis",
