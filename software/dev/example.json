@@ -1,15 +1,13 @@
 {
-  "@context": {
-    "rs": "https://w3id.org/everse/rs#"
-  },
+  "@context": "https://w3id.org/everse/rs#",
   "@id": "https://example.org/howfairis",
   "@type": "SoftwareApplication",
   "name": "howfairis",
   "description": "Command line tool to analyze a GitHub or GitLab repository's compliance with the fair-software.eu recommendations",
   "url": "https://github.com/fair-software/howfairis",
-  "identifier": { "@id": "https://example.org/howfairis" },
+  "identifier": "https://example.org/howfairis",
   "isAccessibleForFree": true,
-  "hasQualityDimension": { "@id": "FAIRness", "@type": "@id" },
+  "hasQualityDimension": "FAIRness",
   "howToUse": [ "CI/CD", "command-line" ],
-  "license": { "@id": "https://spdx.org/licenses/Apache-2.0.html", "@type": "@id" }
+  "license": "https://spdx.org/licenses/Apache-2.0.html"
 }
