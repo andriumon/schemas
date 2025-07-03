@@ -29,7 +29,6 @@
     "howToUse": { "@id": "rs:howToUse", "@type": "@id" },
     "usedBy": { "@id": "rs:usedBy", "@type": "@id" },
     "appliesToProgrammingLanguage": { "@id": "rs:appliesToProgrammingLanguage", "@type": "@id" },
-    "FAIRness": { "@id": "rs:FAIRness", "@type": "@id" },
     "Sustainability": { "@id": "rs:Sustainability", "@type": "@id" },
     "Openness": { "@id": "rs:Openness", "@type": "@id" },
     "AnalysisCode": { "@id": "rs:AnalysisCode", "@type": "@id" },
