@@ -58,7 +58,7 @@
       "@type": "rdf:Property",
       "rdfs:label": "howToUse",
       "rdfs:comment": "Property that indicates how a software application is expected to be used (command line, CI/CD, service, etc.).",
-      "domainIncludes": { "@id": "SoftwareApplication" },
+      "schema:domainIncludes": { "@id": "SoftwareApplication" },
       "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
