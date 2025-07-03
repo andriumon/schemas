@@ -66,8 +66,8 @@
       "@type": "rdf:Property",
       "rdfs:label": "Used by",
       "rdfs:comment": "Property that indicates how a software application is used by a science cluster.",
-      "domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "schema:Text" }
+      "schema:domainIncludes": { "@id": "SoftwareApplication" },
+      "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
       "@id": "appliesToProgrammingLanguage",
