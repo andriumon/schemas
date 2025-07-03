@@ -43,7 +43,7 @@
       "rdfs:label": "has quality dimension",
       "rdfs:comment": "Property designed to link a software tool with its corresponding quality dimensions.",
       "schema:domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "SoftwareQualityDimension" }
+      "schema:rangeIncludes": { "@id": "SoftwareQualityDimension" }
     },
     {
       "@id": "hasQualityIndicator",
