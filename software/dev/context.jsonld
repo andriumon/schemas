@@ -75,7 +75,7 @@
       "rdfs:label": "Applies to programming language",
       "rdfs:comment": "Property that indicates how a software tool applies to a given programming language.",
       "schema:domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "schema:Text" }
+      "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
       "@id": "FAIRness",
