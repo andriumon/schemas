@@ -10,7 +10,7 @@
     "rs": "https://w3id.org/everse/rs#",
 
     "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator"}, 
-    "SoftwareQualityDimension": "rsqd:SoftwareQualityDimension",
+    "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension"},
     "maintainer": { "@id": "codemeta:maintainer" },
 
      "SoftwareApplication": {"@id": "schema:SoftwareApplication"},
