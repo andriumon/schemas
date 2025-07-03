@@ -13,7 +13,7 @@
     "SoftwareQualityDimension": "rsqd:SoftwareQualityDimension",
     "maintainer": { "@id": "codemeta:maintainer" },
 
-    "SoftwareApplication": "schema:SoftwareApplication",
+     "SoftwareApplication": {"@id": "schema:SoftwareApplication"},
     "applicationCategory": { "@id": "schema:applicationCategory", "@type": "@id" },
     "author": { "@id": "schema:author", "@type": "@id" },
     "description": "schema:description",
