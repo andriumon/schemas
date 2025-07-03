@@ -9,11 +9,11 @@
     "codemeta": "https://w3id/org/codemeta/",
     "rs": "https://w3id.org/everse/rs#",
 
-    "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator"}, 
-    "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension"},
+    "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator" },
+    "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension" },
     "maintainer": { "@id": "codemeta:maintainer" },
 
-     "SoftwareApplication": {"@id": "schema:SoftwareApplication"},
+    "SoftwareApplication": { "@id": "schema:SoftwareApplication" },
     "applicationCategory": { "@id": "schema:applicationCategory", "@type": "@id" },
     "author": { "@id": "schema:author", "@type": "@id" },
     "description": "schema:description",
@@ -29,8 +29,9 @@
     "howToUse": { "@id": "rs:howToUse", "@type": "@id" },
     "usedBy": { "@id": "rs:usedBy", "@type": "@id" },
     "appliesToProgrammingLanguage": { "@id": "rs:appliesToProgrammingLanguage", "@type": "@id" },
-    "Sustainability": { "@id": "rs:Sustainability", "@type": "@id" },
-    "Openness": { "@id": "rs:Openness", "@type": "@id" },
+    "FAIRness": { "@id": "FAIRness", "@type": "@id" },
+    "Sustainability": { "@id": "Sustainability", "@type": "@id" },
+    "Openness": { "@id": "Openness", "@type": "@id" },
     "AnalysisCode": { "@id": "rs:AnalysisCode", "@type": "@id" },
     "PrototypeTool": { "@id": "rs:PrototypeTool", "@type": "@id" },
     "ResearchInfrastructureSoftware": { "@id": "rs:ResearchInfrastructureSoftware", "@type": "@id" }

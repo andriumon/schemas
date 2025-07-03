@@ -7,7 +7,7 @@
   "url": "https://github.com/fair-software/howfairis",
   "identifier": "https://example.org/howfairis",
   "isAccessibleForFree": true,
-  "hasQualityDimension": "FAIRness",
+  "hasQualityDimension": { "@id": "FAIRness", "@type": "@id" },
   "howToUse": [ "CI/CD", "command-line" ],
-  "license": {"@id": "https://spdx.org/licenses/Apache-2.0"}
+  "license": "https://spdx.org/licenses/Apache-2.0"
 }
