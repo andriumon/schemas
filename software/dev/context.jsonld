@@ -11,7 +11,7 @@
 
     "SoftwareQualityIndicator": "rsqi:SoftwareQualityIndicator",
     "SoftwareQualityDimension": "rsqd:SoftwareQualityDimension",
-    "maintainer": "codemeta:maintainer",
+    "maintainer": { "@id": "codemeta:maintainer" },
 
     "SoftwareApplication": "schema:SoftwareApplication",
     "applicationCategory": { "@id": "schema:applicationCategory", "@type": "@id" },
