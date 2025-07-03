@@ -9,5 +9,6 @@
   "isAccessibleForFree": true,
   "hasQualityDimension": { "@id": "FAIRness", "@type": "@id" },
   "howToUse": [ "CI/CD", "command-line" ],
-  "license": "https://spdx.org/licenses/Apache-2.0"
+  "license": { "@id":"https://spdx.org/licenses/Apache-2.0", "@type": "@id" },
+  "applicationCategory": { "@id":"PrototypeTool", "@type": "@id" }
 }

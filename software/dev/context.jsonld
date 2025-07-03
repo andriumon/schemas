@@ -8,6 +8,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "codemeta": "https://w3id/org/codemeta/",
     "rs": "https://w3id.org/everse/rs#",
+    "rsqdi": "https://w3id.org/everse/i/dimensions/",
 
     "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator" },
     "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension" },
@@ -29,16 +30,24 @@
     "howToUse": { "@id": "rs:howToUse", "@type": "@id" },
     "usedBy": { "@id": "rs:usedBy", "@type": "@id" },
     "appliesToProgrammingLanguage": { "@id": "rs:appliesToProgrammingLanguage", "@type": "@id" },
-    "FAIRness": { "@id": "FAIRness", "@type": "@id" },
-    "Sustainability": { "@id": "Sustainability", "@type": "@id" },
-    "Openness": { "@id": "Openness", "@type": "@id" },
     "AnalysisCode": { "@id": "rs:AnalysisCode", "@type": "@id" },
     "PrototypeTool": { "@id": "rs:PrototypeTool", "@type": "@id" },
-    "ResearchInfrastructureSoftware": { "@id": "rs:ResearchInfrastructureSoftware", "@type": "@id" }
+    "ResearchInfrastructureSoftware": { "@id": "rs:ResearchInfrastructureSoftware", "@type": "@id" },
+    "Compatibility": { "@id": "rsqdi:compatibility", "@type": "@id" },
+    "FAIRness": { "@id": "rsqdi:fainess", "@type": "@id" },
+    "Flexibility": { "@id": "rsqdi:flexibility", "@type": "@id" },
+    "FunctionalSuitability": { "@id": "rsqdi:functional_suitability", "@type": "@id"  },
+    "InteractionCapability": { "@id": "rsqdi:interaction_capability", "@type": "@id"  },
+    "Maintainability": { "@id": "rsqdi:maintainability", "@type": "@id"  },
+    "PerformanceEfficiency": { "@id": "rsqdi:performance_efficiency", "@type": "@id"  },
+    "Reliability": { "@id": "rsqdi:reliability", "@type": "@id"  },
+    "Safety": { "@id": "rsqdi:safety", "@type": "@id"  },
+    "Security": { "@id": "rsqdi:security", "@type": "@id"  },
+    "Sustainability": { "@id": "rsqdi:sustainability", "@type": "@id" }
   },
   "@graph": [
     {
-      "@id": "hasQualityDimension",
+      "@id": "rs:hasQualityDimension",
       "@type": "rdf:Property",
       "rdfs:label": "has quality dimension",
       "rdfs:comment": "Property designed to link a software tool with its corresponding quality dimensions.",
@@ -46,7 +55,7 @@
       "schema:rangeIncludes": { "@id": "SoftwareQualityDimension" }
     },
     {
-      "@id": "hasQualityIndicator",
+      "@id": "rs:hasQualityIndicator",
       "@type": "rdf:Property",
       "rdfs:label": "has quality indicator",
       "rdfs:comment": "Property that links a software application with its corresponding quality indicators.",
@@ -54,7 +63,7 @@
       "schema:rangeIncludes": { "@id": "SoftwareQualityIndicator" }
     },
     {
-      "@id": "howToUse",
+      "@id": "rs:howToUse",
       "@type": "rdf:Property",
       "rdfs:label": "howToUse",
       "rdfs:comment": "Property that indicates how a software application is expected to be used (command line, CI/CD, service, etc.).",
@@ -62,7 +71,7 @@
       "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "usedBy",
+      "@id": "rs:usedBy",
       "@type": "rdf:Property",
       "rdfs:label": "Used by",
       "rdfs:comment": "Property that indicates how a software application is used by a science cluster.",
@@ -70,7 +79,7 @@
       "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "appliesToProgrammingLanguage",
+      "@id": "rs:appliesToProgrammingLanguage",
       "@type": "rdf:Property",
       "rdfs:label": "Applies to programming language",
       "rdfs:comment": "Property that indicates how a software tool applies to a given programming language.",
@@ -78,35 +87,17 @@
       "schema:rangeIncludes": { "@id": "schema:Text" }
     },
     {
-      "@id": "FAIRness",
-      "@type": "SoftwareQualityDimension",
-      "rdfs:label": "FAIRness",
-      "rdfs:comment": "Quality dimension related to the compliance of a software tool with the Findable, Accessible, Interoperable and Reusable (FAIR) principles."
-    },
-    {
-      "@id": "Sustainability",
-      "@type": "SoftwareQualityDimension",
-      "rdfs:label": "Sustainability",
-      "rdfs:comment": "Quality dimension related to the compliance of a software tool with aspects related to Functional sustainability, Reproducibility, Long-term usability, Portability, Maintainability, Documentation, Usability, Code analysis, Security, Community and Resource efficiency."
-    },
-    {
-      "@id": "Openness",
-      "@type": "SoftwareQualityDimension",
-      "rdfs:label": "Openness",
-      "rdfs:comment": "Quality dimension related to the compliance of a software tool with best practices for Open Source."
-    },
-    {
-      "@id": "AnalysisCode",
+      "@id": "rs:AnalysisCode",
       "rdfs:label": "Analysis Code",
       "rdfs:comment": "Software tier type used to categorize scripts and tools designed to support a research publication or investigation, with a low level of maturity"
     },
     {
-      "@id": "PrototypeTool",
+      "@id": "rs:PrototypeTool",
       "rdfs:label": "Prototype tool",
       "rdfs:comment": "Software tier type used to categorize tools designed to support a research publication or investigation that have reached a level of maturity and reuse among the community"
     },
     {
-      "@id": "ResearchInfrastructureSoftware",
+      "@id": "rs:ResearchInfrastructureSoftware",
       "rdfs:label": "Research infrasturcture software",
       "rdfs:comment": "Software tier type used to categorize mature tools that are used by one or several Research Infrastructures and/or science communities"
     },
