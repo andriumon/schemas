@@ -8,7 +8,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "codemeta": "https://w3id/org/codemeta/",
     "rs": "https://w3id.org/everse/rs#",
-    "rsqdi": "https://w3id.org/everse/i/dimensions/",
+    "dim": "https://w3id.org/everse/i/dimensions/",
 
     "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator" },
     "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension" },
@@ -27,23 +27,12 @@
 
     "hasQualityDimension": { "@id": "rs:hasQualityDimension", "@type": "@id" },
     "hasQualityIndicator": { "@id": "rs:hasQualityIndicator", "@type": "@id" },
-    "howToUse": { "@id": "rs:howToUse", "@type": "@id" },
+    "howToUse": { "@id": "rs:howToUse"},
     "usedBy": { "@id": "rs:usedBy", "@type": "@id" },
     "appliesToProgrammingLanguage": { "@id": "rs:appliesToProgrammingLanguage", "@type": "@id" },
     "AnalysisCode": { "@id": "rs:AnalysisCode", "@type": "@id" },
     "PrototypeTool": { "@id": "rs:PrototypeTool", "@type": "@id" },
-    "ResearchInfrastructureSoftware": { "@id": "rs:ResearchInfrastructureSoftware", "@type": "@id" },
-    "Compatibility": { "@id": "rsqdi:compatibility", "@type": "@id" },
-    "FAIRness": { "@id": "rsqdi:fainess", "@type": "@id" },
-    "Flexibility": { "@id": "rsqdi:flexibility", "@type": "@id" },
-    "FunctionalSuitability": { "@id": "rsqdi:functional_suitability", "@type": "@id"  },
-    "InteractionCapability": { "@id": "rsqdi:interaction_capability", "@type": "@id"  },
-    "Maintainability": { "@id": "rsqdi:maintainability", "@type": "@id"  },
-    "PerformanceEfficiency": { "@id": "rsqdi:performance_efficiency", "@type": "@id"  },
-    "Reliability": { "@id": "rsqdi:reliability", "@type": "@id"  },
-    "Safety": { "@id": "rsqdi:safety", "@type": "@id"  },
-    "Security": { "@id": "rsqdi:security", "@type": "@id"  },
-    "Sustainability": { "@id": "rsqdi:sustainability", "@type": "@id" }
+    "ResearchInfrastructureSoftware": { "@id": "rs:ResearchInfrastructureSoftware", "@type": "@id" }
   },
   "@graph": [
     {
