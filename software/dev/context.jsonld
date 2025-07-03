@@ -51,7 +51,7 @@
       "rdfs:label": "has quality indicator",
       "rdfs:comment": "Property that links a software application with its corresponding quality indicators.",
       "schema:domainIncludes": { "@id": "SoftwareApplication" },
-      "rangeIncludes": { "@id": "SoftwareQualityIndicator" }
+      "schema:rangeIncludes": { "@id": "SoftwareQualityIndicator" }
     },
     {
       "@id": "howToUse",
