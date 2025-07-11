@@ -9,6 +9,7 @@
     "codemeta": "https://w3id/org/codemeta/",
     "rs": "https://w3id.org/everse/rs#",
     "dim": "https://w3id.org/everse/i/dimensions/",
+    "ind": "https://w3id.org/everse/i/indicators/",
 
     "SoftwareQualityIndicator": { "@id": "rsqi:SoftwareQualityIndicator" },
     "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension" },
