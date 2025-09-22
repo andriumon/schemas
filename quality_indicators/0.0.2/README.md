@@ -20,7 +20,7 @@ Namespaces used in this document:
 
 ### Definitions
 #### Research Software Indicator
-A software quality indicator represents a specific aspect software that can be measured (e.g., FAIRness, test coverage, documentation coverage, etc.)
+A software quality indicator represents a specific aspect of software that can be measured (e.g., FAIRness, test coverage, documentation coverage, etc.)
 
 This definition is inspired by the W3C Data Quality Vocabulary (https://www.w3.org/TR/vocab-dqv/#dqv:Dimension), where a “metric” reads as “Represents a standard to measure a quality dimension".
 
