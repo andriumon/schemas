@@ -13,7 +13,7 @@
     "description": { "@id": "schema:description"},
     "source": { "@id": "dcterms:source", "@type": "@id"},
     "isPartOf": { "@id": "schema:isPartOf", "@type": "@id"},
-    "abbreviation": { "@id": "vivo:abbreviation", "@type": "@id"},
+    "abbreviation": { "@id": "vivo:abbreviation"},
 
     "SoftwareQualityDimension": { "@id": "rsqd:SoftwareQualityDimension", "@type": "@id"}
   },
